@@ -162,9 +162,7 @@ namespace FreeSpaceForUnowhy
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.Show();
-            this.Hide();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
