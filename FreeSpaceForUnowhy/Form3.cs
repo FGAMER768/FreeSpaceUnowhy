@@ -177,7 +177,7 @@ namespace FreeSpaceForUnowhy
                 try
                 {
                     Directory.Delete(tempPath, true);
-                    MessageBox.Show("Le dossier Inutiles a été supprimé avec succès !");
+                    MessageBox.Show("Le dossier Lelivrescolaire a été supprimé avec succès !");
                 }
                 catch (IOException ex)
                 {
@@ -190,6 +190,37 @@ namespace FreeSpaceForUnowhy
             }
         }
 
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
+            string tempPath = Path.Combine("C:", userProfile, "AppData", "Roaming", "HiSqool");
+            
+
+
+
+
+            if (Directory.Exists(tempPath))
+            {
+                try
+                {
+                    Directory.Delete(tempPath, true);
+                    MessageBox.Show("Le dossier HiSqool a été supprimé avec succès !");
+                }
+                catch (IOException ex)
+                {
+                    MessageBox.Show("Impossible de supprimer le dossier HiSqool : " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Le dossier HiSqool n'existe pas sur cet ordinateur.");
+            }
+        }
     }
 
 }
