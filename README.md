@@ -1,7 +1,7 @@
 # FreeSpaceUnowhy
 A Tool To Free Up Space On Unowhy PC's
 
-![Image](https://github.com/FGAMER768/FreeSpaceUnowhy/blob/master/Image.png)
+![Image](https://github.com/FGAMER768/FreeSpaceUnowhy/blob/master/FreeSpaceUnowhy.png)
 
 # Lis Moi !
 
