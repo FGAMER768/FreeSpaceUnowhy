@@ -38,6 +38,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -46,7 +47,7 @@
             this.button1.BackColor = System.Drawing.Color.LawnGreen;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(58, 99);
+            this.button1.Location = new System.Drawing.Point(58, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 46);
             this.button1.TabIndex = 0;
@@ -74,7 +75,7 @@
             this.button3.BackColor = System.Drawing.Color.LawnGreen;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(58, 283);
+            this.button3.Location = new System.Drawing.Point(58, 257);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(189, 46);
             this.button3.TabIndex = 2;
@@ -88,7 +89,7 @@
             this.button4.BackColor = System.Drawing.Color.LawnGreen;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(309, 99);
+            this.button4.Location = new System.Drawing.Point(58, 323);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(189, 46);
             this.button4.TabIndex = 3;
@@ -145,7 +146,7 @@
             this.button5.BackColor = System.Drawing.Color.LawnGreen;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(558, 99);
+            this.button5.Location = new System.Drawing.Point(558, 131);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(189, 46);
             this.button5.TabIndex = 4;
@@ -159,13 +160,27 @@
             this.button7.BackColor = System.Drawing.Color.LawnGreen;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(558, 283);
+            this.button7.Location = new System.Drawing.Point(558, 257);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(189, 46);
             this.button7.TabIndex = 9;
             this.button7.Text = "Supprimer le dossier HiSqool";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button9.BackColor = System.Drawing.Color.LawnGreen;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(558, 323);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(189, 46);
+            this.button9.TabIndex = 10;
+            this.button9.Text = "Désinstaller Educadhoc";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form3
             // 
@@ -174,6 +189,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label1);
@@ -185,7 +201,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
-            this.Text = "FreeSpaceUnowhy";
+            this.Text = "Libérer de l\'éspace";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,5 +219,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button9;
     }
 }

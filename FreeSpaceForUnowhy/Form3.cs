@@ -221,6 +221,33 @@ namespace FreeSpaceForUnowhy
                 MessageBox.Show("Le dossier HiSqool n'existe pas sur cet ordinateur.");
             }
         }
-    }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
+            string tempPath = Path.Combine("C:", userProfile, "AppData", "Local", "Programs", "Hachette");
+
+
+
+
+
+            if (Directory.Exists(tempPath))
+            {
+                try
+                {
+                    Directory.Delete(tempPath, true);
+                    MessageBox.Show("Le dossier Educadhoc a été supprimé avec succès !");
+                }
+                catch (IOException ex)
+                {
+                    MessageBox.Show("Impossible de supprimer le dossier Educadhoc : " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Le dossier Educadhoc n'existe pas sur cet ordinateur.");
+            }
+        }
+    }
+    
 }
