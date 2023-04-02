@@ -16,6 +16,10 @@ namespace FreeSpaceForUnowhy
         public Form6()
         {
             InitializeComponent();
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            // Verrouiller le formulaire en grande fenêtre
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,6 +47,12 @@ namespace FreeSpaceForUnowhy
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
+        }
+
+        private void Form5FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Mettre fin à l'application lorsque le formulaire se ferme
+            Application.Exit();
         }
     }
 }
