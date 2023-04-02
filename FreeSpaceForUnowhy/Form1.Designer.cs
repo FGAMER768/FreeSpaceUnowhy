@@ -57,6 +57,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1624, 1045);
             this.Controls.Add(this.progressBar1);
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "FreeSpaceForUnowhy";

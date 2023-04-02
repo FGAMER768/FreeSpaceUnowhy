@@ -51,5 +51,12 @@ namespace FreeSpaceForUnowhy
             this.Hide();
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
+        }
     }
 }
