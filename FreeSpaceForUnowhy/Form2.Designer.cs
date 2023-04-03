@@ -96,6 +96,7 @@
             this.buttonInfos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonInfos.UseVisualStyleBackColor = true;
             this.buttonInfos.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonInfos.Leave += new System.EventHandler(this.buttonInfos_Leave);
             // 
             // buttonParametres
             // 

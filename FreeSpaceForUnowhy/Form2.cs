@@ -204,5 +204,15 @@ namespace FreeSpaceForUnowhy
             this.PnlFormLoader.Controls.Add(form5_Vrb);
             form5_Vrb.Show();
         }
+
+        private void button1_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInfos_Leave(object sender, EventArgs e)
+        {
+            buttonInfos.BackColor = Color.FromArgb(24, 30, 54);
+        }
     }
 }
