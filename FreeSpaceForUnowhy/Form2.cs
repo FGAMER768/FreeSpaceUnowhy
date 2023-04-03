@@ -7,22 +7,82 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.InteropServices;
 
 namespace FreeSpaceForUnowhy
 {
     public partial class Form2 : Form
     {
+
+        
         public Form2()
         {
             InitializeComponent();
+
+            
+            
+            
+            
             this.StartPosition = FormStartPosition.CenterScreen;
             // Verrouiller le formulaire en grande fenêtre
             this.WindowState = FormWindowState.Maximized;
+
+            pnlNav.Height = buttonFreeSpace.Height;
+            pnlNav.Top = buttonFreeSpace.Top;
+            pnlNav.Left = buttonFreeSpace.Left;
+            buttonFreeSpace.BackColor = Color.FromArgb(46, 51, 73);
+
+            pnlNav.Height = buttonAccueil.Height;
+            pnlNav.Top = buttonAccueil.Top;
+            pnlNav.Left = buttonAccueil.Left;
+            buttonAccueil.BackColor = Color.FromArgb(46, 51, 73);
+
+            pnlNav.Height = buttonParametres.Height;
+            pnlNav.Top = buttonParametres.Top;
+            pnlNav.Left = buttonParametres.Left;
+            buttonParametres.BackColor = Color.FromArgb(46, 51, 73);
+
+            pnlNav.Height = buttonInfos.Height;
+            pnlNav.Top = buttonInfos.Top;
+            pnlNav.Left = buttonInfos.Left;
+            buttonInfos.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Accueil";
+            this.PnlFormLoader.Controls.Clear();
+            Accueil Accueil_Vrb = new Accueil() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Accueil_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(Accueil_Vrb);
+            Accueil_Vrb.Show();
+
+            lblTitle.Text = "Paramètres";
+            this.PnlFormLoader.Controls.Clear();
+            Form4 Parametres_Vrb = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Parametres_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(Parametres_Vrb);
+            Parametres_Vrb.Show();
+
+            lblTitle.Text = "Libérer de l'éspace";
+            this.PnlFormLoader.Controls.Clear();
+            Form3 FreeSpace_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FreeSpace_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(FreeSpace_Vrb);
+            FreeSpace_Vrb.Show();
+
+            lblTitle.Text = "Infos PC";
+            this.PnlFormLoader.Controls.Clear();
+            Form5 form5_Vrb = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form5_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form5_Vrb);
+            form5_Vrb.Show();
+
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            string username = Environment.GetEnvironmentVariable("USERNAME");
+            label1.Text = username;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,6 +117,92 @@ namespace FreeSpaceForUnowhy
             Form6 form6 = new Form6();
             form6.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonFreeSpace_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = buttonFreeSpace.Height;
+            pnlNav.Top = buttonFreeSpace.Top;
+            pnlNav.Left = buttonFreeSpace.Left;
+            buttonFreeSpace.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Libérer de l'espace";
+            this.PnlFormLoader.Controls.Clear();
+            Form3 FreeSpace_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FreeSpace_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(FreeSpace_Vrb);
+            FreeSpace_Vrb.Show();
+        }
+
+        private void buttonAccueil_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = buttonAccueil.Height;
+            pnlNav.Top = buttonAccueil.Top;
+            pnlNav.Left = buttonAccueil.Left;
+            buttonAccueil.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Accueil";
+            this.PnlFormLoader.Controls.Clear();
+            Accueil Accueil_Vrb = new Accueil() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Accueil_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(Accueil_Vrb);
+            Accueil_Vrb.Show();
+
+        }
+
+        private void buttonParametres_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = buttonParametres.Height;
+            pnlNav.Top = buttonParametres.Top;
+            pnlNav.Left = buttonParametres.Left;
+            buttonParametres.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Paramètres";
+            this.PnlFormLoader.Controls.Clear();
+            Form4 Parametres_Vrb = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Parametres_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(Parametres_Vrb);
+            Parametres_Vrb.Show();
+        }
+
+        private void buttonFreeSpace_Leave(object sender, EventArgs e)
+        {
+            buttonFreeSpace.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void buttonAccueil_Leave(object sender, EventArgs e)
+        {
+            buttonAccueil.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void buttonParametres_Leave(object sender, EventArgs e)
+        {
+            buttonParametres.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            pnlNav.Height = buttonInfos.Height;
+            pnlNav.Top = buttonInfos.Top;
+            pnlNav.Left = buttonInfos.Left;
+            buttonInfos.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Infos PC";
+            this.PnlFormLoader.Controls.Clear();
+            Form5 form5_Vrb = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form5_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form5_Vrb);
+            form5_Vrb.Show();
         }
     }
 }
