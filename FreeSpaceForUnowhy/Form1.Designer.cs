@@ -47,7 +47,7 @@
             this.Progressbar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.Progressbar1.InnerMargin = 2;
             this.Progressbar1.InnerWidth = -1;
-            this.Progressbar1.Location = new System.Drawing.Point(53, 137);
+            this.Progressbar1.Location = new System.Drawing.Point(51, 121);
             this.Progressbar1.MarqueeAnimationSpeed = 2000;
             this.Progressbar1.Name = "Progressbar1";
             this.Progressbar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
@@ -86,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Source Code Pro", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
-            this.label2.Location = new System.Drawing.Point(74, 201);
+            this.label2.Location = new System.Drawing.Point(73, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 22);
             this.label2.TabIndex = 4;
