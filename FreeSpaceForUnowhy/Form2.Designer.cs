@@ -68,7 +68,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 1061);
+            this.panel1.Size = new System.Drawing.Size(193, 985);
             this.panel1.TabIndex = 6;
             // 
             // pnlNav
@@ -145,7 +145,7 @@
             this.buttonFreeSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.buttonFreeSpace.Image = ((System.Drawing.Image)(resources.GetObject("buttonFreeSpace.Image")));
             this.buttonFreeSpace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonFreeSpace.Location = new System.Drawing.Point(0, 1019);
+            this.buttonFreeSpace.Location = new System.Drawing.Point(0, 943);
             this.buttonFreeSpace.Name = "buttonFreeSpace";
             this.buttonFreeSpace.Size = new System.Drawing.Size(193, 42);
             this.buttonFreeSpace.TabIndex = 1;
@@ -167,10 +167,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(73, 89);
+            this.label1.Location = new System.Drawing.Point(43, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 1;
@@ -202,7 +203,7 @@
             // 
             this.PnlFormLoader.Location = new System.Drawing.Point(199, 59);
             this.PnlFormLoader.Name = "PnlFormLoader";
-            this.PnlFormLoader.Size = new System.Drawing.Size(1713, 990);
+            this.PnlFormLoader.Size = new System.Drawing.Size(1677, 918);
             this.PnlFormLoader.TabIndex = 8;
             // 
             // Form2
@@ -211,7 +212,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(1888, 985);
             this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panel1);

@@ -33,17 +33,17 @@ namespace FreeSpaceForUnowhy
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = $"Nom de la machine: {SystemInformation.ComputerName}";
+            label1.Text = $"{SystemInformation.ComputerName}";
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            label2.Text = $"Système d'exploitation: {Environment.OSVersion.VersionString}";
+            label2.Text = $"{Environment.OSVersion.VersionString}";
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            label3.Text = $"Nom d'utilisateur: {SystemInformation.UserName}";
+            label3.Text = $"{SystemInformation.UserName}";
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -58,12 +58,12 @@ namespace FreeSpaceForUnowhy
             string cpuName = obj["Name"].ToString();
 
             // Afficher le nom du processeur dans le label
-            label4.Text = $"Nom du CPU: {cpuName}";
+            label4.Text = $"{cpuName}";
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            label5.Text = $"Mémoire RAM: {((new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory / 1024) / 1024)} Mo";
+            label5.Text = $"{((new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory / 1024) / 1024)} Mo";
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace FreeSpaceForUnowhy
             DriveInfo drive = new DriveInfo("C");
             long availableSpace = drive.AvailableFreeSpace;
             long totalSpace = drive.TotalSize;
-            label6.Text = $"Stockage total: {FormatBytes(totalSpace)}, Espace libre: {FormatBytes(availableSpace)}";
+            label6.Text = $"Total : {FormatBytes(totalSpace)}, Libre: {FormatBytes(availableSpace)}";
         }
 
         public static string FormatBytes(long bytes)
@@ -103,7 +103,15 @@ namespace FreeSpaceForUnowhy
             this.Hide();
         }
 
-       
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
 
 }
