@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeSpaceUnowhy", "FreeSpaceForUnowhy\FreeSpaceUnowhy.csproj", "{C38641D3-6E9D-41FC-9A4C-59A837F7C147}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FreeSpaceUnowhy_Installer", "FreeSpaceUnowhy_Installer\FreeSpaceUnowhy_Installer.vdproj", "{D5995D11-40A2-4516-93DE-1F69D5762BBA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5995D11-40A2-4516-93DE-1F69D5762BBA}.Debug|Any CPU.ActiveCfg = Debug
-		{D5995D11-40A2-4516-93DE-1F69D5762BBA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
