@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
+using System.Drawing.Drawing2D;
+using System.Diagnostics;
 
 namespace FreeSpaceForUnowhy
 {
@@ -25,8 +27,7 @@ namespace FreeSpaceForUnowhy
             
             
             this.StartPosition = FormStartPosition.CenterScreen;
-            // Verrouiller le formulaire en grande fenêtre
-            this.WindowState = FormWindowState.Maximized;
+            
 
             pnlNav.Height = buttonFreeSpace.Height;
             pnlNav.Top = buttonFreeSpace.Top;
@@ -83,6 +84,32 @@ namespace FreeSpaceForUnowhy
         {
             string username = Environment.GetEnvironmentVariable("USERNAME");
             label1.Text = username;
+
+            lblTitle.Text = "Accueil";
+            this.PnlFormLoader.Controls.Clear();
+            Accueil Accueil_Vrb = new Accueil() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Accueil_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(Accueil_Vrb);
+            Accueil_Vrb.Show();
+
+            pnlNav.Height = buttonAccueil.Height;
+            pnlNav.Top = buttonAccueil.Top;
+            pnlNav.Left = buttonAccueil.Left;
+            buttonAccueil.BackColor = Color.FromArgb(46, 51, 73);
+
+
+
+            // Définir la couleur de fond initiale du bouton
+            buttonInfos.BackColor = Color.FromArgb(24, 30, 54);
+
+            // Définir la couleur de fond initiale du bouton
+            buttonAccueil.BackColor = Color.FromArgb(24, 30, 54);
+
+            // Définir la couleur de fond initiale du bouton
+            buttonFreeSpace.BackColor = Color.FromArgb(24, 30, 54);
+
+            // Définir la couleur de fond initiale du bouton
+            buttonParametres.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -114,9 +141,7 @@ namespace FreeSpaceForUnowhy
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
-            this.Hide();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -213,6 +238,34 @@ namespace FreeSpaceForUnowhy
         private void buttonInfos_Leave(object sender, EventArgs e)
         {
             buttonInfos.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            string url = "https://github.com/FGAMER768/FreeSpaceUnowhy";
+            Process.Start(url);
+        }
+
+        private void button1_Paint(object sender, PaintEventArgs e)
+        {
+            // Définir la forme d'affichage personnalisée pour le bouton
+            GraphicsPath buttonPath = new GraphicsPath();
+            buttonPath.AddEllipse(0, 0, button1.Width, button1.Height);
+            button1.Region = new Region(buttonPath);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string url = "https://www.youtube.com/channel/UCLfboIvl8VrNM3n6D9_QdZg";
+            Process.Start(url);
+        }
+
+        private void button2_Paint(object sender, PaintEventArgs e)
+        {
+            // Définir la forme d'affichage personnalisée pour le bouton
+            GraphicsPath buttonPath = new GraphicsPath();
+            buttonPath.AddEllipse(0, 0, button1.Width, button1.Height);
+            button1.Region = new Region(buttonPath);
         }
     }
 }

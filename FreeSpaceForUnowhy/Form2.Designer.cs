@@ -41,9 +41,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PnlFormLoader.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -68,7 +74,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 985);
+            this.panel1.Size = new System.Drawing.Size(186, 538);
             this.panel1.TabIndex = 6;
             // 
             // pnlNav
@@ -81,6 +87,7 @@
             // 
             // buttonInfos
             // 
+            this.buttonInfos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInfos.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonInfos.FlatAppearance.BorderSize = 0;
             this.buttonInfos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -90,7 +97,7 @@
             this.buttonInfos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonInfos.Location = new System.Drawing.Point(0, 212);
             this.buttonInfos.Name = "buttonInfos";
-            this.buttonInfos.Size = new System.Drawing.Size(193, 42);
+            this.buttonInfos.Size = new System.Drawing.Size(186, 42);
             this.buttonInfos.TabIndex = 8;
             this.buttonInfos.Text = "Infos PC";
             this.buttonInfos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -100,6 +107,7 @@
             // 
             // buttonParametres
             // 
+            this.buttonParametres.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonParametres.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonParametres.FlatAppearance.BorderSize = 0;
             this.buttonParametres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -109,7 +117,7 @@
             this.buttonParametres.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonParametres.Location = new System.Drawing.Point(0, 170);
             this.buttonParametres.Name = "buttonParametres";
-            this.buttonParametres.Size = new System.Drawing.Size(193, 42);
+            this.buttonParametres.Size = new System.Drawing.Size(186, 42);
             this.buttonParametres.TabIndex = 3;
             this.buttonParametres.Text = "Paramètres";
             this.buttonParametres.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -119,6 +127,7 @@
             // 
             // buttonAccueil
             // 
+            this.buttonAccueil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAccueil.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAccueil.FlatAppearance.BorderSize = 0;
             this.buttonAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -128,7 +137,7 @@
             this.buttonAccueil.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAccueil.Location = new System.Drawing.Point(0, 128);
             this.buttonAccueil.Name = "buttonAccueil";
-            this.buttonAccueil.Size = new System.Drawing.Size(193, 42);
+            this.buttonAccueil.Size = new System.Drawing.Size(186, 42);
             this.buttonAccueil.TabIndex = 2;
             this.buttonAccueil.Text = "Accueil";
             this.buttonAccueil.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -138,6 +147,7 @@
             // 
             // buttonFreeSpace
             // 
+            this.buttonFreeSpace.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonFreeSpace.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonFreeSpace.FlatAppearance.BorderSize = 0;
             this.buttonFreeSpace.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -145,9 +155,9 @@
             this.buttonFreeSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.buttonFreeSpace.Image = ((System.Drawing.Image)(resources.GetObject("buttonFreeSpace.Image")));
             this.buttonFreeSpace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonFreeSpace.Location = new System.Drawing.Point(0, 943);
+            this.buttonFreeSpace.Location = new System.Drawing.Point(0, 496);
             this.buttonFreeSpace.Name = "buttonFreeSpace";
-            this.buttonFreeSpace.Size = new System.Drawing.Size(193, 42);
+            this.buttonFreeSpace.Size = new System.Drawing.Size(186, 42);
             this.buttonFreeSpace.TabIndex = 1;
             this.buttonFreeSpace.Text = "Libérer de l\'espace";
             this.buttonFreeSpace.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -157,21 +167,20 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 128);
+            this.panel2.Size = new System.Drawing.Size(186, 128);
             this.panel2.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(43, 86);
+            this.label1.Location = new System.Drawing.Point(55, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 1;
@@ -201,10 +210,64 @@
             // 
             // PnlFormLoader
             // 
-            this.PnlFormLoader.Location = new System.Drawing.Point(199, 59);
+            this.PnlFormLoader.Controls.Add(this.button2);
+            this.PnlFormLoader.Controls.Add(this.button1);
+            this.PnlFormLoader.Controls.Add(this.label2);
+            this.PnlFormLoader.Location = new System.Drawing.Point(208, 71);
             this.PnlFormLoader.Name = "PnlFormLoader";
-            this.PnlFormLoader.Size = new System.Drawing.Size(1677, 918);
+            this.PnlFormLoader.Size = new System.Drawing.Size(715, 442);
             this.PnlFormLoader.TabIndex = 8;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(30, 83);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(124, 27);
+            this.panel3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(204, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(274, 65);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Bienvenue !";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(55)))), ((int)(((byte)(78)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(35, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(298, 50);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "GitHub";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(55)))), ((int)(((byte)(78)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(389, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(298, 50);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "YouTube";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Form2
             // 
@@ -212,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1888, 985);
+            this.ClientSize = new System.Drawing.Size(935, 538);
             this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panel1);
@@ -224,8 +287,11 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PnlFormLoader.ResumeLayout(false);
+            this.PnlFormLoader.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +310,9 @@
         private System.Windows.Forms.Panel PnlFormLoader;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button buttonInfos;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -38,7 +38,7 @@ namespace FreeSpaceForUnowhy
 
         private void label2_Click(object sender, EventArgs e)
         {
-            label2.Text = $"{Environment.OSVersion.VersionString}";
+           
         }
 
         private void label3_Click(object sender, EventArgs e)
