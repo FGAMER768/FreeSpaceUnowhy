@@ -86,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Source Code Pro", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
-            this.label2.Location = new System.Drawing.Point(62, 291);
+            this.label2.Location = new System.Drawing.Point(71, 292);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 22);
             this.label2.TabIndex = 4;
@@ -97,7 +97,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Source Code Pro", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
-            this.label3.Location = new System.Drawing.Point(3, 52);
+            this.label3.Location = new System.Drawing.Point(-3, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(255, 34);
             this.label3.TabIndex = 5;
