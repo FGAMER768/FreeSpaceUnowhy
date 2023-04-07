@@ -17,7 +17,27 @@ namespace FreeSpaceForUnowhy
     public partial class Form2 : Form
     {
 
-        
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            // Dessiner une forme de rectangle arrondi
+            int radius = 20;
+            GraphicsPath path = new GraphicsPath();
+            path.StartFigure();
+            path.AddArc(new Rectangle(0, 0, radius * 2, radius * 2), 180, 90);
+            path.AddLine(radius, 0, this.Width - radius, 0);
+            path.AddArc(new Rectangle(this.Width - radius * 2, 0, radius * 2, radius * 2), -90, 90);
+            path.AddLine(this.Width, radius, this.Width, this.Height - radius);
+            path.AddArc(new Rectangle(this.Width - radius * 2, this.Height - radius * 2, radius * 2, radius * 2), 0, 90);
+            path.AddLine(this.Width - radius, this.Height, radius, this.Height);
+            path.AddArc(new Rectangle(0, this.Height - radius * 2, radius * 2, radius * 2), 90, 90);
+            path.CloseFigure();
+
+            // Appliquer la forme arrondie à la région de la fenêtre
+            this.Region = new Region(path);
+        }
+
         public Form2()
         {
             InitializeComponent();
@@ -266,6 +286,16 @@ namespace FreeSpaceForUnowhy
             GraphicsPath buttonPath = new GraphicsPath();
             buttonPath.AddEllipse(0, 0, button1.Width, button1.Height);
             button1.Region = new Region(buttonPath);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
