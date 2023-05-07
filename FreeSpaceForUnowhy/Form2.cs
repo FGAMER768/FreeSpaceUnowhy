@@ -104,10 +104,10 @@ namespace FreeSpaceForUnowhy
 
             lblTitle.Text = "Launcher";
             this.PnlFormLoader.Controls.Clear();
-            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(form3_Vrb);
-            form3_Vrb.Show();
+            Form5 form5_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form5_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form5_Vrb);
+            form5_Vrb.Show();
 
 
         }
@@ -319,10 +319,10 @@ namespace FreeSpaceForUnowhy
 
             lblTitle.Text = "Launcher";
             this.PnlFormLoader.Controls.Clear();
-            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(form3_Vrb);
-            form3_Vrb.Show();
+            Form5 form5_Vrb = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form5_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form5_Vrb);
+            form5_Vrb.Show();
         }
     }
 }
