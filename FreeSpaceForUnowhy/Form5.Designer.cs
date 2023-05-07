@@ -54,7 +54,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(57, 23);
+            this.label1.Location = new System.Drawing.Point(61, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 0;
@@ -98,9 +98,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(62, 49);
+            this.panel3.Location = new System.Drawing.Point(62, 318);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(276, 61);
+            this.panel3.Size = new System.Drawing.Size(240, 61);
             this.panel3.TabIndex = 8;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -128,7 +128,7 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(48, 23);
+            this.label3.Location = new System.Drawing.Point(48, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 20);
             this.label3.TabIndex = 2;
@@ -140,9 +140,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(360, 49);
+            this.panel1.Location = new System.Drawing.Point(342, 232);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(231, 61);
+            this.panel1.Size = new System.Drawing.Size(231, 57);
             this.panel1.TabIndex = 9;
             // 
             // panel4
@@ -167,9 +167,9 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(62, 327);
+            this.panel5.Location = new System.Drawing.Point(62, 56);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(558, 61);
+            this.panel5.Size = new System.Drawing.Size(300, 61);
             this.panel5.TabIndex = 10;
             // 
             // Form5

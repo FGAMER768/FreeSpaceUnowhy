@@ -25,7 +25,6 @@ namespace FreeSpaceForUnowhy
             InitializeComponent();
 
             this.StartPosition = FormStartPosition.CenterScreen;
-            // Verrouiller le formulaire en grande fenêtre
             this.WindowState = FormWindowState.Maximized;
 
 
@@ -48,22 +47,22 @@ namespace FreeSpaceForUnowhy
 
         private void label4_Click(object sender, EventArgs e)
         {
-            // Créer une requête pour récupérer le nom du processeur
+            
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Name FROM Win32_Processor");
 
-            // Exécuter la requête et récupérer le premier objet de résultat
+            
             ManagementObject obj = searcher.Get().Cast<ManagementObject>().FirstOrDefault();
 
-            // Récupérer le nom du processeur à partir de l'objet résultat
+           
             string cpuName = obj["Name"].ToString();
 
-            // Afficher le nom du processeur dans le label
+            
             label4.Text = $"{cpuName}";
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            label5.Text = $"{((new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory / 1024) / 1024)} Mo";
+            label5.Text = $"{((new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory / 1024) / 1024)} Mo Installées";
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -92,7 +91,6 @@ namespace FreeSpaceForUnowhy
 
         private void Form5FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Mettre fin à l'application lorsque le formulaire se ferme
             Application.Exit();
         }
 

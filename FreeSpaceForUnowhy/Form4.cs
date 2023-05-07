@@ -16,7 +16,7 @@ namespace FreeSpaceForUnowhy
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            // Verrouiller le formulaire en grande fenêtre
+            
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -26,7 +26,7 @@ namespace FreeSpaceForUnowhy
         }
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Mettre fin à l'application lorsque le formulaire se ferme
+            
             Application.Exit();
         }
 

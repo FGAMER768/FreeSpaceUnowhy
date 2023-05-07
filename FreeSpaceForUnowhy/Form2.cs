@@ -34,7 +34,7 @@ namespace FreeSpaceForUnowhy
             path.AddArc(new Rectangle(0, this.Height - radius * 2, radius * 2, radius * 2), 90, 90);
             path.CloseFigure();
 
-            // Appliquer la forme arrondie à la région de la fenêtre
+            
             this.Region = new Region(path);
         }
 
@@ -69,6 +69,11 @@ namespace FreeSpaceForUnowhy
             pnlNav.Left = buttonInfos.Left;
             buttonInfos.BackColor = Color.FromArgb(46, 51, 73);
 
+            pnlNav.Height = button6.Height;
+            pnlNav.Top = button6.Top;
+            pnlNav.Left = button6.Left;
+            button6.BackColor = Color.FromArgb(46, 51, 73);
+
             lblTitle.Text = "Accueil";
             this.PnlFormLoader.Controls.Clear();
             Accueil Accueil_Vrb = new Accueil() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -97,6 +102,13 @@ namespace FreeSpaceForUnowhy
             this.PnlFormLoader.Controls.Add(form5_Vrb);
             form5_Vrb.Show();
 
+            lblTitle.Text = "Launcher";
+            this.PnlFormLoader.Controls.Clear();
+            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form3_Vrb);
+            form3_Vrb.Show();
+
 
         }
 
@@ -119,16 +131,16 @@ namespace FreeSpaceForUnowhy
 
 
 
-            // Définir la couleur de fond initiale du bouton
+            
             buttonInfos.BackColor = Color.FromArgb(24, 30, 54);
 
-            // Définir la couleur de fond initiale du bouton
+            
             buttonAccueil.BackColor = Color.FromArgb(24, 30, 54);
 
-            // Définir la couleur de fond initiale du bouton
+            
             buttonFreeSpace.BackColor = Color.FromArgb(24, 30, 54);
 
-            // Définir la couleur de fond initiale du bouton
+            
             buttonParametres.BackColor = Color.FromArgb(24, 30, 54);
         }
 
@@ -147,7 +159,7 @@ namespace FreeSpaceForUnowhy
         }
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Mettre fin à l'application lorsque le formulaire se ferme
+            
             Application.Exit();
         }
 
@@ -268,7 +280,7 @@ namespace FreeSpaceForUnowhy
 
         private void button1_Paint(object sender, PaintEventArgs e)
         {
-            // Définir la forme d'affichage personnalisée pour le bouton
+            
             GraphicsPath buttonPath = new GraphicsPath();
             buttonPath.AddEllipse(0, 0, button1.Width, button1.Height);
             button1.Region = new Region(buttonPath);
@@ -282,7 +294,7 @@ namespace FreeSpaceForUnowhy
 
         private void button2_Paint(object sender, PaintEventArgs e)
         {
-            // Définir la forme d'affichage personnalisée pour le bouton
+            
             GraphicsPath buttonPath = new GraphicsPath();
             buttonPath.AddEllipse(0, 0, button1.Width, button1.Height);
             button1.Region = new Region(buttonPath);
@@ -296,6 +308,21 @@ namespace FreeSpaceForUnowhy
         private void button5_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = button6.Height;
+            pnlNav.Top = button6.Top;
+            pnlNav.Left = button6.Left;
+            button6.BackColor = Color.FromArgb(46, 51, 73);
+
+            lblTitle.Text = "Launcher";
+            this.PnlFormLoader.Controls.Clear();
+            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form3_Vrb);
+            form3_Vrb.Show();
         }
     }
 }
