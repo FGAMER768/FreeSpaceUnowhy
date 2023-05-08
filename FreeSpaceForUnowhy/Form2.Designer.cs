@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlNav = new System.Windows.Forms.Panel();
+            this.buttonLauncher = new System.Windows.Forms.Button();
             this.buttonInfos = new System.Windows.Forms.Button();
             this.buttonParametres = new System.Windows.Forms.Button();
             this.buttonAccueil = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.pnlNav = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,8 +69,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.pnlNav);
+            this.panel1.Controls.Add(this.buttonLauncher);
             this.panel1.Controls.Add(this.buttonInfos);
             this.panel1.Controls.Add(this.buttonParametres);
             this.panel1.Controls.Add(this.buttonAccueil);
@@ -81,13 +82,25 @@
             this.panel1.Size = new System.Drawing.Size(186, 538);
             this.panel1.TabIndex = 6;
             // 
-            // pnlNav
+            // buttonLauncher
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.pnlNav.Location = new System.Drawing.Point(0, 165);
-            this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(10, 120);
-            this.pnlNav.TabIndex = 9;
+            this.buttonLauncher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLauncher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonLauncher.FlatAppearance.BorderSize = 0;
+            this.buttonLauncher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLauncher.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLauncher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.buttonLauncher.Image = ((System.Drawing.Image)(resources.GetObject("buttonLauncher.Image")));
+            this.buttonLauncher.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonLauncher.Location = new System.Drawing.Point(0, 254);
+            this.buttonLauncher.Name = "buttonLauncher";
+            this.buttonLauncher.Size = new System.Drawing.Size(186, 42);
+            this.buttonLauncher.TabIndex = 10;
+            this.buttonLauncher.Text = "Launcher";
+            this.buttonLauncher.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonLauncher.UseVisualStyleBackColor = true;
+            this.buttonLauncher.Click += new System.EventHandler(this.buttonLauncher_Click);
+            this.buttonLauncher.Leave += new System.EventHandler(this.buttonLauncher_Leave);
             // 
             // buttonInfos
             // 
@@ -204,9 +217,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -224,6 +237,7 @@
             // 
             // PnlFormLoader
             // 
+            this.PnlFormLoader.Controls.Add(this.button6);
             this.PnlFormLoader.Controls.Add(this.button2);
             this.PnlFormLoader.Controls.Add(this.button1);
             this.PnlFormLoader.Controls.Add(this.label2);
@@ -240,9 +254,9 @@
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(389, 184);
+            this.button2.Location = new System.Drawing.Point(374, 170);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(298, 50);
+            this.button2.Size = new System.Drawing.Size(311, 79);
             this.button2.TabIndex = 11;
             this.button2.Text = "YouTube";
             this.button2.UseVisualStyleBackColor = false;
@@ -256,9 +270,9 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(35, 184);
+            this.button1.Location = new System.Drawing.Point(22, 170);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(298, 50);
+            this.button1.Size = new System.Drawing.Size(311, 79);
             this.button1.TabIndex = 10;
             this.button1.Text = "GitHub";
             this.button1.UseVisualStyleBackColor = false;
@@ -274,6 +288,7 @@
             this.label2.Size = new System.Drawing.Size(274, 65);
             this.label2.TabIndex = 9;
             this.label2.Text = "Bienvenue !";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button3
             // 
@@ -305,23 +320,28 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.pnlNav.Location = new System.Drawing.Point(2, 155);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(10, 120);
+            this.pnlNav.TabIndex = 11;
+            // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(55)))), ((int)(((byte)(78)))));
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Nirmala UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(0, 254);
+            this.button6.Location = new System.Drawing.Point(199, 276);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(186, 42);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Launcher";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Size = new System.Drawing.Size(337, 79);
+            this.button6.TabIndex = 12;
+            this.button6.Text = "Unowhy Tools \r\n( si vous êtes admin )";
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form2
@@ -365,7 +385,6 @@
         private System.Windows.Forms.Button buttonFreeSpace;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel PnlFormLoader;
-        private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button buttonInfos;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
@@ -374,6 +393,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonLauncher;
+        private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button6;
     }
 }

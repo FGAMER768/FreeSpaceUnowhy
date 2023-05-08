@@ -29,5 +29,28 @@ namespace FreeSpaceForUnowhy
             string url = "https://github.com/FGAMER768/FreeSpaceUnowhy";
             Process.Start(url);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string url = "https://github.com/FGAMER768/FreeSpaceUnowhy";
+            Process.Start(url);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string url = "https://www.youtube.com/channel/UCLfboIvl8VrNM3n6D9_QdZg";
+            Process.Start(url);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/STY1001/Unowhy-Tools";
+            Process.Start(url);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

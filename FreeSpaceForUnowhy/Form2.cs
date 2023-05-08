@@ -11,6 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
+using FreeSpaceUnowhy;
 
 namespace FreeSpaceForUnowhy
 {
@@ -21,7 +22,7 @@ namespace FreeSpaceForUnowhy
         {
             base.OnPaint(e);
 
-            // Dessiner une forme de rectangle arrondi
+            
             int radius = 20;
             GraphicsPath path = new GraphicsPath();
             path.StartFigure();
@@ -69,10 +70,10 @@ namespace FreeSpaceForUnowhy
             pnlNav.Left = buttonInfos.Left;
             buttonInfos.BackColor = Color.FromArgb(46, 51, 73);
 
-            pnlNav.Height = button6.Height;
-            pnlNav.Top = button6.Top;
-            pnlNav.Left = button6.Left;
-            button6.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = buttonLauncher.Height;
+            pnlNav.Top = buttonLauncher.Top;
+            pnlNav.Left = buttonLauncher.Left;
+            buttonLauncher.BackColor = Color.FromArgb(46, 51, 73);
 
             lblTitle.Text = "Accueil";
             this.PnlFormLoader.Controls.Clear();
@@ -104,10 +105,10 @@ namespace FreeSpaceForUnowhy
 
             lblTitle.Text = "Launcher";
             this.PnlFormLoader.Controls.Clear();
-            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(form3_Vrb);
-            form3_Vrb.Show();
+            Form6 form6_Vrb = new Form6() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form6_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form6_Vrb);
+            form6_Vrb.Show();
 
 
         }
@@ -131,17 +132,20 @@ namespace FreeSpaceForUnowhy
 
 
 
-            
             buttonInfos.BackColor = Color.FromArgb(24, 30, 54);
 
-            
+
             buttonAccueil.BackColor = Color.FromArgb(24, 30, 54);
 
-            
+
             buttonFreeSpace.BackColor = Color.FromArgb(24, 30, 54);
 
-            
+
             buttonParametres.BackColor = Color.FromArgb(24, 30, 54);
+
+
+            buttonLauncher.BackColor = Color.FromArgb(24, 30, 54);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -247,6 +251,7 @@ namespace FreeSpaceForUnowhy
             buttonParametres.BackColor = Color.FromArgb(24, 30, 54);
         }
 
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             pnlNav.Height = buttonInfos.Height;
@@ -310,19 +315,40 @@ namespace FreeSpaceForUnowhy
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonLauncher_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = button6.Height;
-            pnlNav.Top = button6.Top;
-            pnlNav.Left = button6.Left;
-            button6.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = buttonLauncher.Height;
+            pnlNav.Top = buttonLauncher.Top;
+            pnlNav.Left = buttonLauncher.Left;
+            buttonLauncher.BackColor = Color.FromArgb(46, 51, 73);
 
             lblTitle.Text = "Launcher";
             this.PnlFormLoader.Controls.Clear();
-            Form3 form3_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form3_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(form3_Vrb);
-            form3_Vrb.Show();
+            Form6 form6_Vrb = new Form6() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form6_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(form6_Vrb);
+            form6_Vrb.Show();
+        }
+
+        private void buttonLauncher_Leave(object sender, EventArgs e)
+        {
+            buttonLauncher.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void pnlNav_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/STY1001/Unowhy-Tools";
+            Process.Start(url);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
