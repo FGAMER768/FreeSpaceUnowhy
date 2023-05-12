@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Media;
 
 namespace FreeSpaceForUnowhy
 {
     public partial class Form1 : Form
     {
+        private SoundPlayer _soundPlayer;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -25,7 +27,8 @@ namespace FreeSpaceForUnowhy
              int nWidthEllipse,
              int nHeightEllipse
 
-            );
+            )
+            ;
 
         public Form1()
         {
@@ -34,7 +37,9 @@ namespace FreeSpaceForUnowhy
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             Progressbar1.Value = 0;
 
-          
+            
+
+
         }
 
         
@@ -43,7 +48,7 @@ namespace FreeSpaceForUnowhy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer2.Start();
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -67,6 +72,16 @@ namespace FreeSpaceForUnowhy
                 form2.Show();
                 this.Hide();
             }
+        }  
+        
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            SoundPlayer player = new SoundPlayer("Loading_Sound_1.wav");
+
+            player.Play();
+
+            timer2.Stop();
         }
     }
 

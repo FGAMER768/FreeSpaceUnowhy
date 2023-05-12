@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,9 +38,19 @@ namespace FreeSpaceForUnowhy
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
-            this.Hide();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/FGAMER768/FreeSpaceUnowhy/releases/latest";
+            Process.Start(url);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("FreeSpaceUnowhy Version 8.0", "Version", MessageBoxButtons.OK);
+
         }
     }
 }

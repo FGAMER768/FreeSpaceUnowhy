@@ -146,6 +146,8 @@ namespace FreeSpaceForUnowhy
 
             buttonLauncher.BackColor = Color.FromArgb(24, 30, 54);
 
+            timer1.Start();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -347,6 +349,27 @@ namespace FreeSpaceForUnowhy
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToLongTimeString();
+            label5.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
