@@ -27,7 +27,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>7.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>8.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>cropped-sigle-y-unowhy-3.ico</ApplicationIcon>
+    <ApplicationIcon>FreeSpaceUnowhy.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -330,6 +330,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cropped-sigle-y-unowhy-3.ico" />
+    <Content Include="FreeSpaceUnowhy.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

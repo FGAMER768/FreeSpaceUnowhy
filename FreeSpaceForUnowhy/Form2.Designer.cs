@@ -54,6 +54,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -182,7 +183,7 @@
             this.buttonFreeSpace.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonFreeSpace.FlatAppearance.BorderSize = 0;
             this.buttonFreeSpace.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFreeSpace.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFreeSpace.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFreeSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.buttonFreeSpace.Image = ((System.Drawing.Image)(resources.GetObject("buttonFreeSpace.Image")));
             this.buttonFreeSpace.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -390,6 +391,10 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,5 +455,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Timer timer2;
     }
 }

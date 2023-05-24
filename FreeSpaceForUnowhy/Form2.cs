@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
 using FreeSpaceUnowhy;
+using System.Media;
 
 namespace FreeSpaceForUnowhy
 {
@@ -89,7 +90,7 @@ namespace FreeSpaceForUnowhy
             this.PnlFormLoader.Controls.Add(Parametres_Vrb);
             Parametres_Vrb.Show();
 
-            lblTitle.Text = "Libérer de l'éspace";
+            lblTitle.Text = "FreeSpace";
             this.PnlFormLoader.Controls.Clear();
             Form3 FreeSpace_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FreeSpace_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -117,6 +118,8 @@ namespace FreeSpaceForUnowhy
         {
             string username = Environment.GetEnvironmentVariable("USERNAME");
             label1.Text = username;
+
+            timer2.Start();
 
             lblTitle.Text = "Accueil";
             this.PnlFormLoader.Controls.Clear();
@@ -199,7 +202,7 @@ namespace FreeSpaceForUnowhy
             pnlNav.Left = buttonFreeSpace.Left;
             buttonFreeSpace.BackColor = Color.FromArgb(46, 51, 73);
 
-            lblTitle.Text = "Libérer de l'espace";
+            lblTitle.Text = "FreeSpace";
             this.PnlFormLoader.Controls.Clear();
             Form3 FreeSpace_Vrb = new Form3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FreeSpace_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -372,6 +375,15 @@ namespace FreeSpaceForUnowhy
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            SoundPlayer player = new SoundPlayer("Loading_Sound_2.wav");
+
+            player.Play();
+
+            timer2.Stop();
         }
     }
 }

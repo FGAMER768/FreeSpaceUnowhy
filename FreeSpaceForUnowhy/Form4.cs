@@ -49,7 +49,7 @@ namespace FreeSpaceForUnowhy
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("FreeSpaceUnowhy Version 8.0", "Version", MessageBoxButtons.OK);
+            MessageBox.Show("FreeSpaceUnowhy Version 8.1", "Version", MessageBoxButtons.OK);
 
         }
     }
