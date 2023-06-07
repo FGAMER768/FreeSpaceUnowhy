@@ -12,9 +12,9 @@ Vous pouvez télecharger l'executable dans [Releases](https://github.com/FGAMER7
 
 - Lors de l'execution du logiciel, il y aura un avertissement de windows, veuillez l'ignorer
 
-- *Je précise que le logiciel a un risque de bug presque nul ( Les 8 versions ont été testés au moins une trentaine de fois )*
+### ***Je précise que le logiciel a un risque de bug presque nul ( Les 8 versions ont été testés au moins une trentaine de fois )***
 
-- *Veuillez noter que l'utilisateur met en oeuvre l'application à ses risques et périls*
+### ***Veuillez noter que l'utilisateur met en oeuvre l'application à ses risques et périls***
 
 # Informations
 
