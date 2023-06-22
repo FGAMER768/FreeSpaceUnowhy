@@ -22,9 +22,7 @@ Vous pouvez me contacter via discord FGAMER768#9474 ou rejoindre [Ce serveur dis
 
 By FGAMER768
 
-### Change Log
 
-<body>
   <h1 id="FreeSpaceUnowhy-changelog">FreeSpaceUnowhy Change Log</h1>
   <h2 id="-ajoutés-changements-enlevés">✅ : Ajoutés | ↪️ : Changements | ❌ : Enlevés</h2>
   <h2>8.1</h2>
