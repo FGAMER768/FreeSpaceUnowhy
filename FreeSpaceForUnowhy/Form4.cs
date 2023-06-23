@@ -30,21 +30,9 @@ namespace FreeSpaceForUnowhy
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            webView21 = new WebView2();
-            webView21.Dock = DockStyle.Fill;
-            Controls.Add(webView21);
-
-            webView21.EnsureCoreWebView2Async(null).ContinueWith(_ =>
-            {
-                webView21.CoreWebView2.Navigate("https://htmlpreview.github.io/?https://github.com/FGAMER768/FreeSpaceUnowhy/blob/master/Ressources/changelog.html");
-            }, TaskScheduler.FromCurrentSynchronizationContext());
+            
         }
-
-        private async Task initizated()
-        {
-            await webView21.EnsureCoreWebView2Async(null);
-        }
-
+ 
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
