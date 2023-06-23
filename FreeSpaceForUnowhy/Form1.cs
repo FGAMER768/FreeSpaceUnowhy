@@ -14,7 +14,7 @@ namespace FreeSpaceForUnowhy
 {
     public partial class Form1 : Form
     {
-        private SoundPlayer _soundPlayer;
+        
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 

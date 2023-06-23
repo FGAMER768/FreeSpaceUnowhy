@@ -8,11 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.WinForms;
+using Microsoft.Web.WebView2.Core;
+
+
+
 
 namespace FreeSpaceForUnowhy
 {
     public partial class Form4 : Form
     {
+        
+
         public Form4()
         {
             InitializeComponent();
@@ -23,8 +30,22 @@ namespace FreeSpaceForUnowhy
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            webView21 = new WebView2();
+            webView21.Dock = DockStyle.Fill;
+            Controls.Add(webView21);
 
+            webView21.EnsureCoreWebView2Async(null).ContinueWith(_ =>
+            {
+                webView21.CoreWebView2.Navigate("https://htmlpreview.github.io/?https://github.com/FGAMER768/FreeSpaceUnowhy/blob/master/Ressources/changelog.html");
+            }, TaskScheduler.FromCurrentSynchronizationContext());
         }
+
+        private async Task initizated()
+        {
+            await webView21.EnsureCoreWebView2Async(null);
+        }
+
+
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
             
@@ -50,6 +71,21 @@ namespace FreeSpaceForUnowhy
         private void button1_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("FreeSpaceUnowhy Version 8.1", "Version", MessageBoxButtons.OK);
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void webView21_Click(object sender, EventArgs e)
+        {
 
         }
     }
