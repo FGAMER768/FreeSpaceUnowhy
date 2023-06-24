@@ -78,6 +78,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.Text = "À Propos";
+            this.Load += new System.EventHandler(this.Form4_Load_1);
             this.ResumeLayout(false);
 
         }

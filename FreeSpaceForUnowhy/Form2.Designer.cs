@@ -284,6 +284,7 @@
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.Size = new System.Drawing.Size(715, 442);
             this.PnlFormLoader.TabIndex = 8;
+            this.PnlFormLoader.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormLoader_Paint);
             // 
             // button6
             // 

@@ -8,8 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Web.WebView2.WinForms;
-using Microsoft.Web.WebView2.Core;
+
 
 
 
@@ -73,6 +72,11 @@ namespace FreeSpaceForUnowhy
         }
 
         private void webView21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load_1(object sender, EventArgs e)
         {
 
         }

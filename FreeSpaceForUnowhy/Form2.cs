@@ -385,5 +385,10 @@ namespace FreeSpaceForUnowhy
 
             timer2.Stop();
         }
+
+        private void PnlFormLoader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
