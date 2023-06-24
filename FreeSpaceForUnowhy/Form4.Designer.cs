@@ -41,7 +41,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(44, 345);
+            this.button1.Location = new System.Drawing.Point(33, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 53);
             this.button1.TabIndex = 0;
