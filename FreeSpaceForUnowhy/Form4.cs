@@ -80,5 +80,16 @@ namespace FreeSpaceForUnowhy
         {
 
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("FreeSpaceUnowhy Version 9.0", "Version", MessageBoxButtons.OK);
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/FGAMER768/FreeSpaceUnowhy/releases/latest";
+            Process.Start(url);
+        }
     }
 }
