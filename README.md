@@ -18,7 +18,7 @@ Vous pouvez télecharger l'executable dans [Releases](https://github.com/FGAMER7
 
 # Informations
 
-Vous pouvez me contacter via discord FGAMER768#9474 ou rejoindre [Ce serveur discord](https://discord.gg/yCKHujMY99)
+Vous pouvez me contacter via discord `fgamer768` ou rejoindre [Ce serveur discord](https://discord.gg/yCKHujMY99)
 
 By FGAMER768
 

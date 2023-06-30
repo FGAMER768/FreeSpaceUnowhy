@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeSpaceUnowhy", "FreeSpaceForUnowhy\FreeSpaceUnowhy.csproj", "{C38641D3-6E9D-41FC-9A4C-59A837F7C147}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeSpaceUnowhy - WPF", "..\..\FreeSpaceUnowhy - WPF\FreeSpaceUnowhy - WPF.csproj", "{7716343B-D5CA-4F59-BB86-FA5D93228C8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C38641D3-6E9D-41FC-9A4C-59A837F7C147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
