@@ -38,7 +38,7 @@
                         <TextBlock Margin="20,10,10,0">
                             <TextBlock.Inlines>
                                 <Hyperlink NavigateUri="https://github.com/STY1001/Unowhy-Tools" RequestNavigate="Hyperlink_RequestNavigate">
-                                    <TextBlock Text="Download Now !" Foreground="Red" FontSize="16"/>
+                                    <TextBlock Text="Download Now !" Foreground="Red" FontSize="20"/>
                                 </Hyperlink>
                             </TextBlock.Inlines>
                         </TextBlock>
@@ -75,7 +75,7 @@
                     </Setter>
                 </Style>
             </StackPanel.Resources>
-            <TextBlock Text="Découvrir"
+            <TextBlock Text="Coming Soon...."
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"

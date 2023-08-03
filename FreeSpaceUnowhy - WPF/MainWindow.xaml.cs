@@ -32,7 +32,15 @@ namespace FreeSpaceUnowhy___WPF
             Username = System.Environment.UserName;
         }
 
-        // Implementation of INotifyPropertyChanged
+        private void OnCloseButtonClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            
+            Application.Current.Shutdown();
+        }
+        private void OnMinimizeButtonClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
