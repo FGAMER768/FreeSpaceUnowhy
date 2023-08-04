@@ -25,7 +25,18 @@ By FGAMER768
 
   <h1 id="FreeSpaceUnowhy-changelog">FreeSpaceUnowhy Change Log</h1>
   <h2 id="-ajoutés-changements-enlevés">✅ : Ajoutés | ↪️ : Changements | ❌ : Enlevés</h2>
-  <h2>8.1</h2>
+  
+  <h2>9.0</h2>
+  <h3>Grande mise à jour ( grands changements, beaucoup d'ajouts ) : </h3>
+  <ul>
+    <li>✅ - Ajout : Bouton Rechercher ( non fonctionnel )</li>
+    <li>✅ - Ajout : Nouveaux Boutons</li>
+    <li>↪️ - Passage de WINFORM --> WPF</li>
+    <li>↪️ - Modification de toute l'UI, GUI</li>
+    <li>↪️ - Interface plus fluide</li>
+    <li>↪️ - Application moins volumineuse</li>
+  </ul>
+<h2>8.1</h2>
   <h3>Correctifs et Ajouts : </h3>
   <ul>
     <li>✅ - Ajout : Son de chargement au lancement de l'accueil</li>
