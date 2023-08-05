@@ -16,6 +16,8 @@ Vous pouvez télecharger l'executable dans [Releases](https://github.com/FGAMER7
 
 ### ***Veuillez noter que l'utilisateur met en oeuvre l'application à ses risques et périls***
 
+### ***Le seul endroit où vous pouvez installer FreeSpaceUnowhy se trouve ici, ne faites pas confiance aux liens tiers***
+
 # Informations
 
 Vous pouvez me contacter via discord `fgamer768` ou rejoindre [Ce serveur discord](https://discord.gg/yCKHujMY99)
