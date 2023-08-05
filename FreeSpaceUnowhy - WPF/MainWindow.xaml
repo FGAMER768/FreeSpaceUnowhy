@@ -78,26 +78,19 @@
                              Foreground="White" 
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             FontFamily="/Fonts/#Poppins"/>
+                             FontFamily="/Fonts/#Poppins"
+                             Command="{Binding SettingsViewCommand}"/>
 
                 <RadioButton Content="Infos PC" 
                              Height="50" 
                              Foreground="White" 
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             FontFamily="/Fonts/#Poppins"/>
+                             FontFamily="/Fonts/#Poppins"
+                             Command="{Binding SystemInfoViewCommand}"/>
 
 
             </StackPanel>
-
-            <TextBox 
-                Width="250"
-                Height="40"
-                VerticalContentAlignment="Center"
-                HorizontalAlignment="Left"
-                Margin="5"
-                Grid.Column="1"
-                Style="{StaticResource ModernTextBox}"/>
 
             <ContentControl Grid.Row="1" 
                             Grid.Column="1" 
@@ -128,12 +121,32 @@
                            x:Name="MinimizeButton" Cursor="Hand" MouseLeftButtonDown="OnMinimizeButtonClick"/>
             </StackPanel>
 
-
-
-
-
-
-
+            <StackPanel Grid.Column="1" Margin="30,0,200,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Images/Clock-Icon.png" 
+               Width="60" 
+               Height="60" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="10"/>
+                    <StackPanel Grid.Column="1" Margin="14">
+                        <TextBlock Text="{Binding CurrentTime}" 
+                       FontSize="18" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Foreground="White"/>
+                        <TextBlock Text="{Binding CurrentDate}" 
+                       FontSize="18" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       Foreground="White"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
 
         </Grid>
     </Border>

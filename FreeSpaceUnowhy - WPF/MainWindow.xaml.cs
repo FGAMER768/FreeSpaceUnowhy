@@ -47,5 +47,8 @@ namespace FreeSpaceUnowhy___WPF
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        
+
     }
 }

@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="FreeSpaceUnowhy___WPF.MVVM.View.SystemInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.View"
+             xmlns:viewModel="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <viewModel:SystemInfoViewModel/>
+    </UserControl.DataContext>
+
+    <StackPanel>
+        <TextBlock Text="Informations PC : "
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal">
+            <Border Width="150"
+                    Height="150"
+                    CornerRadius="10"
+                    Margin="0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#8533FA"/>
+                        <GradientStop Offset="1" Color="#F290FF"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Image Source="/Images/Windows-Icon.png" 
+                           Height="80" 
+                           Width="80" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top"
+                           Margin="10"/>
+                    <TextBlock Text="{Binding WindowsVersion}" 
+                               Foreground="White"
+                               FontSize="23" 
+                               FontFamily="/Fonts/#Poppins" 
+                               VerticalAlignment="Bottom" 
+                               HorizontalAlignment="Center"
+                               Margin="10"/>
+                </Grid>
+            </Border>
+            <Border Width="250"
+                    Height="100"
+                    CornerRadius="10"
+                    Margin="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#00ABC5"/>
+                        <GradientStop Offset="1" Color="#F290FF"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images/Folder-Icon.png" 
+                           Height="60" 
+                           Width="60" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Margin="10,0"/>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="{Binding AvailableSpaceFormatted}" 
+                                   Foreground="White"
+                                   FontSize="20"
+                                   FontFamily="/Fonts/#Poppins"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="10,21"/>
+
+                        <TextBlock Text="{Binding TotalSpaceFormatted}" 
+                                   Foreground="White"
+                                   FontSize="20"
+                                   FontFamily="/Fonts/#Poppins"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Center"
+                                   Margin="10,-21"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

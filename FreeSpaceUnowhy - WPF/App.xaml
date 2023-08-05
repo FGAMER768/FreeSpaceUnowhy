@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:FreeSpaceUnowhy___WPF"
              xmlns:view="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.View"
              xmlns:viewModel="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.ViewModel"
+
+
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -20,6 +22,13 @@
                 <view:FreeSpaceView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SystemInfoViewModel}">
+                <view:SystemInfoView/>
+            </DataTemplate>
 
 
 
