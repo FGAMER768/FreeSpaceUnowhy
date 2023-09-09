@@ -1,32 +1,59 @@
 ﻿using FreeSpaceUnowhy___WPF.Core;
 using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Management;
+using System.Timers;
 
 namespace FreeSpaceUnowhy___WPF.MVVM.ViewModel
 {
     class SystemInfoViewModel : ObservableObject
     {
         public string WindowsVersion => GetWindowsVersion();
+        public string AvailableSpaceFormatted { get; private set; }
+        public string TotalSpaceFormatted { get; private set; }
+        
 
-        private string GetWindowsVersion()
-        {
-            Version version = Environment.OSVersion.Version;
-
-            if (version.Major == 11)
-            {
-                return "Windows 11";
-            }
-            else if (version.Major == 10)
-            {
-                return "Windows 10";
-            }
-
-            return "Inconnu";
-        }
+        
 
         public SystemInfoViewModel()
         {
+            
             CalculateDiskSpace();
+
+            
+        }
+
+        private string GetWindowsVersion()
+        {
+            try
+            {
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem");
+                ManagementObject os = searcher.Get().OfType<ManagementObject>().FirstOrDefault();
+
+                if (os != null)
+                {
+                    string caption = os["Caption"] as string;
+                    if (!string.IsNullOrEmpty(caption))
+                    {
+                        if (caption.Contains("Windows 10"))
+                        {
+                            return "Windows 10";
+                        }
+                        else if (caption.Contains("Windows 11"))
+                        {
+                            return "Windows 11";
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+               
+            }
+
+            return "Unknown";
         }
 
         private void CalculateDiskSpace()
@@ -39,29 +66,6 @@ namespace FreeSpaceUnowhy___WPF.MVVM.ViewModel
             TotalSpaceFormatted = $"{totalSpaceGB:F2} GB";
         }
 
-        private string _availableSpaceFormatted;
-        public string AvailableSpaceFormatted
-        {
-            get { return _availableSpaceFormatted; }
-            set
-            {
-                _availableSpaceFormatted = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private string _totalSpaceFormatted;
-        public string TotalSpaceFormatted
-        {
-            get { return _totalSpaceFormatted; }
-            set
-            {
-                _totalSpaceFormatted = value;
-                OnPropertyChanged();
-            }
-        }
-
         
     }
 }
-

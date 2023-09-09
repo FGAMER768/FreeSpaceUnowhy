@@ -66,6 +66,8 @@
                            HorizontalAlignment="Left" 
                            VerticalAlignment="Center"
                            Margin="10,0"/>
+                    
+                    
 
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="{Binding AvailableSpaceFormatted}" 

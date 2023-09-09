@@ -14,6 +14,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Reflection;
+using FreeSpaceUnowhy___WPF.MVVM.ViewModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
 
 namespace FreeSpaceUnowhy___WPF.MVVM.View
 {
@@ -25,6 +29,7 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
         public HomeView()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
@@ -48,6 +53,9 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
         {
             System.Diagnostics.Process.Start("https://github.com/FGAMER768");
         }
+
+        
+
     }
 
 }

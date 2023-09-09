@@ -52,9 +52,9 @@
                 </Grid>
             </Border>
             <Border Width="200"
-        Height="200"
-        CornerRadius="10"
-        Margin="45,0,0,0" MouseLeftButtonDown="OnRepoClick" Cursor="Hand">
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0" MouseLeftButtonDown="OnRepoClick" Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" 
                              EndPoint="1,2">
@@ -64,37 +64,31 @@
                 </Border.Background>
                 <Grid>
                     <Image Source="/Images/FGAMER768-Icon.png" 
-               Width="100" Height="100"
-               HorizontalAlignment="Center" VerticalAlignment="Center" />
+                           Width="100" Height="100"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
                     <TextBlock Text="Mon Dépôt GitHub"
-                   Foreground="White"
-                   FontSize="21"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Bottom"
-                   FontFamily="/Fonts/#Poppins"
-                   Margin="0,0,0,10" />
+                               Foreground="White"
+                               FontSize="21"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Bottom"
+                               FontFamily="/Fonts/#Poppins"
+                               Margin="0,0,0,10" />
                 </Grid>
             </Border>
-
-
         </StackPanel>
-        
-        <StackPanel>
 
+        <StackPanel>
             <StackPanel.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="Margin" Value="15,0,0,0">
-                        
-                    </Setter>
+                    <Setter Property="Margin" Value="15,0,0,0"/>
                 </Style>
             </StackPanel.Resources>
             <TextBlock Text="Explorer : "
-                   Foreground="White"
-                   FontSize="20"
+                       Foreground="White"
+                       FontSize="20"
                        FontFamily="/Fonts/#Poppins"
-                   HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
-
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,20"/>
             <StackPanel Orientation="Horizontal">
                 <Border Width="200"
                         Height="100"
@@ -117,8 +111,6 @@
                                    Margin="10"/>
                     </Grid>
                 </Border>
-
-
             </StackPanel>
         </StackPanel>
     </StackPanel>
