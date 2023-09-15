@@ -25,6 +25,7 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
         public SettingsView()
         {
             InitializeComponent();
+            WV.Source = new System.Uri("https://htmlpreview.github.io/?https://github.com/FGAMER768/FreeSpaceUnowhy/blob/master/Ressources/changelog.html");
         }
 
         private void OnAboutButtonClick(object sender, MouseButtonEventArgs e)
