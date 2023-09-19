@@ -8,20 +8,45 @@
         xmlns:view="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.View"
         mc:Ignorable="d"
         Height="600" Width="920"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        Background="Transparent"
-        AllowsTransparency="True">
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="CanMinimize"
+        Background="#272537"
+        AllowsTransparency="False">
+
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
     <Window.Resources>
-
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="RoundedRadioButtonStyle" TargetType="RadioButton">
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="Padding" Value="15 5"/>
+                <Setter Property="Background" Value="#272537"/>
+                <Setter Property="BorderBrush" Value="#272537FF"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="RadioButton">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#232131"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
         </ResourceDictionary>
     </Window.Resources>
 
@@ -34,7 +59,8 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="639*"/>
+                <ColumnDefinition Width="82*"/>
             </Grid.ColumnDefinitions>
 
             <TextBlock Text="{Binding Username}" 
@@ -42,112 +68,87 @@
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Left" 
                        Foreground="White"
-                       Margin="60, 0, 0, 0"
+                       Margin="60,0,0,0"
                        FontFamily="/Fonts/#Poppins"/>
 
-
-            <Image         Width="35"
-                           Height="35"
-                           Source="/Images/User-Icon.png"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Center"
-                           Margin="7"/>
-
+            <Image Width="35"
+                   Height="35"
+                   Source="/Images/User-Icon.png"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="7,0,0,0"/>
 
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Accueil" 
                              Height="50" 
                              Foreground="White" 
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource RoundedRadioButtonStyle}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"
-                             FontFamily="/Fonts/#Poppins"/>
+                             FontFamily="/Fonts/#Poppins"
+                             Cursor="Hand"/>
 
                 <RadioButton Content="Libérer" 
                              Height="50" 
                              Foreground="White" 
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource RoundedRadioButtonStyle}"
                              IsChecked="False"
                              Command="{Binding FreeSpaceViewCommand}"
-                             FontFamily="/Fonts/#Poppins"/>
+                             FontFamily="/Fonts/#Poppins"
+                             Cursor="Hand"/>
 
                 <RadioButton Content="Paramètres" 
                              Height="50" 
                              Foreground="White" 
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource RoundedRadioButtonStyle}"
                              FontFamily="/Fonts/#Poppins"
-                             Command="{Binding SettingsViewCommand}"/>
+                             Command="{Binding SettingsViewCommand}"
+                             Cursor="Hand"/>
 
                 <RadioButton Content="Infos PC" 
                              Height="50" 
                              Foreground="White" 
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
+                             Style="{StaticResource RoundedRadioButtonStyle}"
                              FontFamily="/Fonts/#Poppins"
-                             Command="{Binding SystemInfoViewCommand}"/>
-
-
+                             Command="{Binding SystemInfoViewCommand}"
+                             Cursor="Hand"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1" 
                             Grid.Column="1" 
-                            Margin="10"
-                            Content="{Binding CurrentView }"/>
+                            Margin="10,10,10,10"
+                            Content="{Binding CurrentView }" Grid.ColumnSpan="2"/>
 
-            <StackPanel Grid.Column="1" Margin="500,0,10,0">
-                <TextBlock Text="X"
-                           HorizontalAlignment="Right"
-                           Margin="30,20"
-                           FontSize="26" 
-                           Width="18"
-                           Height="32"
-                           Foreground="White"
-                           x:Name="CloseButton" Cursor="Hand" MouseLeftButtonDown="OnCloseButtonClick"/>
-                
-
-            </StackPanel>
-
-            <StackPanel Grid.Column="1" Margin="525,0,10,0">
-                <TextBlock Text="---"
-                           HorizontalAlignment="Center"
-                           Margin="30,20"
-                           FontSize="26" 
-                           Width="30"
-                           Height="30"
-                           Foreground="White"
-                           x:Name="MinimizeButton" Cursor="Hand" MouseLeftButtonDown="OnMinimizeButtonClick"/>
-            </StackPanel>
-
-            <StackPanel Grid.Column="1" Margin="30,0,200,0">
+            <StackPanel Grid.Column="1" Margin="30,0,118,0">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Image Source="/Images/Clock-Icon.png" 
-               Width="60" 
-               Height="60" 
-               HorizontalAlignment="Left"
-               VerticalAlignment="Center"
-               Margin="10"/>
+                           Width="60" 
+                           Height="60" 
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Margin="10"/>
                     <StackPanel Grid.Column="1" Margin="14">
                         <TextBlock Text="{Binding CurrentTime}" 
-                       FontSize="18" 
-                       HorizontalAlignment="Left" 
-                       VerticalAlignment="Center"
-                       Foreground="White"/>
+                                   FontSize="18" 
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Center"
+                                   Foreground="White"/>
                         <TextBlock Text="{Binding CurrentDate}" 
-                       FontSize="18" 
-                       HorizontalAlignment="Left" 
-                       VerticalAlignment="Center"
-                       Foreground="White"/>
+                                   FontSize="18" 
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Center"
+                                   Foreground="White"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>
-
         </Grid>
     </Border>
 </Window>

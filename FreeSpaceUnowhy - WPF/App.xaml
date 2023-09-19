@@ -13,7 +13,7 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            
+
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
             </DataTemplate>
@@ -30,7 +30,7 @@
                 <view:SystemInfoView/>
             </DataTemplate>
 
-            
+
 
 
         </ResourceDictionary>

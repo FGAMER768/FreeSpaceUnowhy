@@ -8,6 +8,14 @@
              mc:Ignorable="d"
              d:DesignHeight="450"
              d:DesignWidth="800">
+    <UserControl.Resources>
+
+        <LinearGradientBrush x:Key="GradientBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#9600FF" />
+            <GradientStop Offset="1" Color="#AEBAF7" />
+        </LinearGradientBrush>
+    </UserControl.Resources>
+
     <Grid VerticalAlignment="Stretch">
         <TextBlock Text="Paramètres : "
                    VerticalAlignment="Top"
@@ -18,15 +26,38 @@
                    FontFamily="/Fonts/#Poppins" />
         <StackPanel Orientation="Horizontal"
                     Margin="0,50,0,0"
-                   VerticalAlignment="Top">
+                    VerticalAlignment="Top">
             <Border x:Name="Version"
                     Width="200"
                     Height="100"
-                    Background="#828282"
+                    Background="{StaticResource GradientBrush}"
                     CornerRadius="10"
                     Margin="0"
                     Cursor="Hand"
+                    MouseEnter="OnMouseEnter"
+                    MouseLeave="OnMouseLeave"
                     MouseLeftButtonDown="OnAboutButtonClick">
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="Border.MouseEnter">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Border.MouseLeave">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
                 <Grid>
                     <Image Source="/Images/About-Icon.png"
                            Height="55"
@@ -44,13 +75,36 @@
                 </Grid>
             </Border>
             <Border x:Name="LatestVersion"
-                    Margin="15,0,0,0"
+                    Margin="25,0,0,0"
                     Width="200"
                     Height="100"
-                    Background="#828282"
+                    Background="{StaticResource GradientBrush}"
                     CornerRadius="10"
                     Cursor="Hand"
+                    MouseEnter="OnMouseEnter"
+                    MouseLeave="OnMouseLeave"
                     MouseLeftButtonDown="OnLatestVersionButtonClick">
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="Border.MouseEnter">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Border.MouseLeave">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
                 <Grid>
                     <Image Source="/Images/Github-Icon.png"
                            Height="55"

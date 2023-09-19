@@ -12,21 +12,17 @@
                    FontSize="28"
                    HorizontalAlignment="Left"
                    Margin="0,0,0,20"/>
-        <StackPanel Orientation="Horizontal"
-                    Margin="0,0,0,10">
-            <Border Width="400"
-                    Height="200">
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Border Width="400" Height="200"
+                    MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" 
-                                         EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Offset="0" Color="#9600FF" />
+                        <GradientStop Offset="1" Color="#AEBAF7" />
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="10"
-                                       RadiusY="10"
-                                       Rect="0,0,400,200"/>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
@@ -34,41 +30,32 @@
                                    Foreground="White"
                                    FontSize="26"
                                    Margin="20,10,10,0"/>
-
                         <TextBlock Margin="20,10,10,0">
                             <TextBlock.Inlines>
                                 <Hyperlink NavigateUri="https://github.com/STY1001/Unowhy-Tools" RequestNavigate="Hyperlink_RequestNavigate">
-                                    <TextBlock Text="Download Now !" Foreground="Red" FontSize="20"/>
+                                    <TextBlock Text="Download Now !" Foreground="White" FontSize="30" TextDecorations="OverLine"/>
                                 </Hyperlink>
+
                             </TextBlock.Inlines>
                         </TextBlock>
-
                     </StackPanel>
-                    <Image Width="125"
-                           Height="125"
-                           Source="/Images/UT ICON.png"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom"/>
+                    <Image Width="125" Height="125" Source="/Images/UT ICON.png" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                 </Grid>
             </Border>
-            <Border Width="200"
-                    Height="200"
-                    CornerRadius="10"
-                    Margin="45,0,0,0" MouseLeftButtonDown="OnRepoClick" Cursor="Hand">
+            <Border Width="229" Height="200" CornerRadius="10" Margin="20,0,0,0" MouseLeftButtonDown="OnRepoClick" Cursor="Hand"
+                    MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" 
-                             EndPoint="1,2">
-                        <GradientStop Color="#ffc554" Offset="0.0"/>
-                        <GradientStop Color="#ffb73a" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#9600FF" Offset="0.0"/>
+                        <GradientStop Color="#AEBAF7" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
-                    <Image Source="/Images/FGAMER768-Icon.png" 
-                           Width="100" Height="100"
+                    <Image Source="/Images/FGAMER768-Icon.png" Width="150" Height="150"
                            HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <TextBlock Text="Mon Dépôt GitHub"
+                    <TextBlock Text="Repo GITHUB"
                                Foreground="White"
-                               FontSize="21"
+                               FontSize="23"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Bottom"
                                FontFamily="/Fonts/#Poppins"
@@ -90,11 +77,14 @@
                        HorizontalAlignment="Left"
                        Margin="0,0,0,20"/>
             <StackPanel Orientation="Horizontal">
-                <Border Width="200"
-                        Height="100"
-                        Background="#844eff"
-                        CornerRadius="10"
-                        Margin="0" Cursor="Hand" MouseLeftButtonDown="OnAboutButtonClick">
+                <Border x:Name="AboutBorder" Width="200" Height="100" CornerRadius="10" Margin="0" Cursor="Hand" MouseLeftButtonDown="OnAboutButtonClick"
+                        MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Offset="0" Color="#9600FF" />
+                            <GradientStop Offset="1" Color="#AEBAF7" />
+                        </LinearGradientBrush>
+                    </Border.Background>
                     <Grid>
                         <Image Source="/Images/About-Icon.png" 
                                Height="55" 
@@ -109,6 +99,53 @@
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Center"
                                    Margin="10"/>
+                    </Grid>
+                </Border>
+                <Border x:Name="ContributorsBorder" Width="476" Height="100" CornerRadius="10" MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Offset="0" Color="#9600FF" />
+                            <GradientStop Offset="1" Color="#AEBAF7" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <TextBlock Text="Contributeurs : " 
+                                   Foreground="White" 
+                                   FontSize="20" 
+                                   FontFamily="/Fonts/#Poppins" 
+                                   VerticalAlignment="Bottom" 
+                                   HorizontalAlignment="Left"
+                                   Margin="10,0,0,60"/>
+                        <TextBlock Text="STY1001" 
+                                   Foreground="White" 
+                                   FontSize="20" 
+                                   FontFamily="/Fonts/#Poppins" 
+                                   VerticalAlignment="Bottom" 
+                                   HorizontalAlignment="Left"
+                                   Margin="186,0,0,10"/>
+                        <Image Source="/Images/STY1001_PP.png" 
+                               Height="100" 
+                               Width="100" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Top"
+                               Margin="-13"
+                               Cursor="Hand"
+                               MouseLeftButtonDown="OnSTY1001ButtonClick"/>
+                        <TextBlock Text="Ahhj93" 
+                                   Foreground="White" 
+                                   FontSize="20" 
+                                   FontFamily="/Fonts/#Poppins" 
+                                   VerticalAlignment="Bottom" 
+                                   HorizontalAlignment="Left"
+                                   Margin="291,0,0,10"/>
+                        <Image Source="/Images/AHHJ93_PP.png" 
+                               Height="50" 
+                               Width="50" 
+                               HorizontalAlignment="Left" 
+                               VerticalAlignment="Top"
+                               Margin="300,10,0,0"
+                               Cursor="Hand"
+                               MouseLeftButtonDown="OnAHHJ93ButtonClick"/>
                     </Grid>
                 </Border>
             </StackPanel>
