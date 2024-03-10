@@ -7,10 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeSpaceUnowhy - WPF", "Fr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.All|Any CPU.Build.0 = Release|Any CPU
 		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7716343B-D5CA-4F59-BB86-FA5D93228C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU

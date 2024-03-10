@@ -14,11 +14,17 @@
     </UserControl.Resources>
 
     <StackPanel>
-        <TextBlock Text="Libérer de l'espace : "
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+           <Image Source="/Images/Bin-Icon.png" 
+                   Height="48" 
+                   Width="48" 
+                   VerticalAlignment="Center"/>
+            <TextBlock Text="Libérer de l'espace : "
                    Foreground="White"
                    FontSize="28"
-                   HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
+                   VerticalAlignment="Center"/>
+
+        </StackPanel>
         <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,10"/>
         <StackPanel>

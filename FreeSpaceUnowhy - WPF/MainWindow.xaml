@@ -71,9 +71,9 @@
                        Margin="60,0,0,0"
                        FontFamily="/Fonts/#Poppins"/>
 
-            <Image Width="35"
-                   Height="35"
-                   Source="/Images/User-Icon.png"
+            <Image Width="40"
+                   Height="40"
+                   Source="/Images/User-Icon2.png"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                    Margin="7,0,0,0"/>
@@ -88,6 +88,7 @@
                              Command="{Binding HomeViewCommand}"
                              FontFamily="/Fonts/#Poppins"
                              Cursor="Hand"/>
+                
 
                 <RadioButton Content="Libérer" 
                              Height="50" 

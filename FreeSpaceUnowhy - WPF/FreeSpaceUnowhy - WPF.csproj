@@ -242,10 +242,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CPU-Icon.png" />
-    <Resource Include="Images\GPU-Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Accueil.gif" />
+    <Resource Include="Images\GPU-Icon.png" />
+    <Resource Include="Images\Settings-Icon.png" />
+    <Resource Include="Images\Info-Icon.png" />
+    <Resource Include="Images\Home-Icon.png" />
+    <Resource Include="Images\Bin-Icon.png" />
+    <Resource Include="Images\User-Icon2.png" />
     <Content Include="Keys\1Sound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
