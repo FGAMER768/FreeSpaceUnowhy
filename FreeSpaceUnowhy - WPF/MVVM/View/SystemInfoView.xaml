@@ -149,7 +149,7 @@
                         <ColumnDefinition Width="250*"/>
                         <ColumnDefinition Width="23*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="/Images/CPU-Icon.png" 
+                    <Image Source="/Images/CPU-Icon2.png" 
                         Height="80" 
                         Width="80" 
                         HorizontalAlignment="Left" 

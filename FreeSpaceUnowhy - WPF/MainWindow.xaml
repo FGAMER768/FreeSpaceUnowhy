@@ -73,7 +73,7 @@
 
             <Image Width="40"
                    Height="40"
-                   Source="/Images/User-Icon2.png"
+                   Source="/Images/User-Icon.png"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                    Margin="7,0,0,0"/>

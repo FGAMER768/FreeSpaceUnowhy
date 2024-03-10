@@ -94,7 +94,7 @@
                         </LinearGradientBrush>
                     </Border.Background>
                     <Grid>
-                        <Image Source="/Images/About-Icon.png" 
+                        <Image Source="/Images/Info-Icon.png" 
                                Height="55" 
                                Width="55" 
                                HorizontalAlignment="Center" 

@@ -209,28 +209,6 @@
                                    Margin="10"/>
                     </Grid>
                 </Border>
-
-                <Border Width="150"
-                        Height="150"
-                        Background="{StaticResource GradientBrush}"
-                        CornerRadius="10"
-                        MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
-                    <Grid>
-                        <Image Source="/Images/Soon-Icon.png" 
-                               Height="80" 
-                               Width="80" 
-                               HorizontalAlignment="Center" 
-                               VerticalAlignment="Top"
-                               Margin="10"/>
-                        <TextBlock Text="Plus tard..." 
-                                   Foreground="White" 
-                                   FontSize="25" 
-                                   FontFamily="/Fonts/#Poppins" 
-                                   VerticalAlignment="Bottom" 
-                                   HorizontalAlignment="Center"
-                                   Margin="10"/>
-                    </Grid>
-                </Border>
             </StackPanel>
         </StackPanel>
     </StackPanel>
