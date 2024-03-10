@@ -27,7 +27,33 @@ By FGAMER768
 
   <h1 id="FreeSpaceUnowhy-changelog">FreeSpaceUnowhy Change Log</h1>
   <h2 id="-ajoutés-changements-enlevés">✅ : Ajoutés | ↪️ : Changements | ❌ : Enlevés</h2>
-  
+  <h2>10.0</h2>
+  <h3>Mise à jour du style, ajout de fonctionalités : </h3>
+  <ul>
+    <li>❌ - Enlevé : Bouton Rechercher</li>
+    <li>❌ - Enlevé : Boutons "Réduire" et "Fermer" </li>
+    <li>✅ - Ajout : Spécifications PC : Processeur</li>
+    <li>✅ - Ajout : Spécifications PC : GPU ( Carte Graphique )</li>
+    <li>✅ - Ajout : Spécifications PC : RAM ( Quantité de RAM )</li>
+    <li>✅ - Ajout : Spécifications PC : Version Windows</li>
+    <li>✅ - Ajout : Spécifications PC : Stockage Restant/Total</li>
+    <li>✅ - Ajout : Spécifications PC : Menu Secret accessible via un mot de passe</li>
+    <li>✅ - Ajout : Animations sur les boutons</li>
+    <li>✅ - Ajout : Accueil : Dédicace aux contributeurs</li>
+    <li>✅ - Ajout : Date et Heure</li>
+    <li>✅ - Ajout : Page "Infos PC" ( Spécifications PC )</li>
+    <li>✅ - Ajout : Page "Paramètres"</li>
+    <li>✅ - Ajout : Paramètres : "A Propos"</li>
+    <li>✅ - Ajout : Paramètres : "Dernière Version"</li>
+    <li>✅ - Ajout : Paramètres : Changelog intégré</li>
+    <li>✅ - Ajout : EXE : FreeSpaceUnowhy Installable</li>
+    <li>✅ - Ajout : EXE : FreeSpaceUnowhy Portable</li>
+    <li>↪️ - Changement : Modification des boutons</li>
+    <li>↪️ - Changement : Couleurs des boutons changés</li>
+    <li>↪️ - Changement : Style du logiciel </li>
+    <li>↪️ - Changement : Fenetre modifiée </li>
+  </ul>
+
   <h2>9.0</h2>
   <h3>Grande mise à jour ( grands changements, beaucoup d'ajouts ) : </h3>
   <ul>
