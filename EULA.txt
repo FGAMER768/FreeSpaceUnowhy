@@ -1,0 +1,29 @@
+Contrat de Licence Utilisateur Final (CLUF) - FreeSpaceUnowhy
+
+Ce Contrat de Licence Utilisateur Final (CLUF) est un accord légal entre vous et FGAMER768 pour l'utilisation du logiciel FreeSpaceUnowhy. En téléchargeant, installant ou utilisant le Logiciel, vous acceptez d'être lié par les termes de ce CLUF.
+
+Utilisation du Logiciel :
+
+Le Logiciel est conçu pour permettre la désinstallation ou la suppression de logiciels et de dossiers jugés inutiles pour votre ordinateur. Vous pouvez télécharger l'exécutable correspondant dans les versions disponibles dans la section "Releases" sur le site officiel de FreeSpaceUnowhy : [https://github.com/FGAMER768/FreeSpaceUnowhy/releases/latest](https://github.com/FGAMER768/FreeSpaceUnowhy/releases/latest).
+
+Vous comprenez que l'utilisation du Logiciel peut libérer jusqu'à 10 Go d'espace sur votre ordinateur.
+
+Avertissement de Windows :
+
+Lors de l'exécution du Logiciel, il se peut que vous receviez un avertissement de Windows. Nous vous demandons de l'ignorer, car cela n'affecte pas le bon fonctionnement du Logiciel.
+
+Risque de bug :
+
+Le Logiciel a été soigneusement testé et les risques de bugs sont minimes. Les huit versions du Logiciel ont été testées au moins une trentaine de fois pour garantir leur fiabilité. Cependant, veuillez noter que l'utilisation du Logiciel se fait à vos propres risques.
+
+Lieu d'installation :
+
+Le seul endroit où vous devez télécharger et installer FreeSpaceUnowhy est le site ou le lien officiel fourni par FGAMER768 : [https://github.com/FGAMER768/FreeSpaceUnowhy/](https://github.com/FGAMER768/FreeSpaceUnowhy/). Nous vous recommandons de ne pas faire confiance à des liens provenant de sources tierces pour télécharger le Logiciel, afin de garantir l'intégrité et la sécurité de votre système.
+
+Informations de Contact :
+
+Pour toute question, suggestion ou problème concernant le Logiciel, vous pouvez contacter FGAMER768 via Discord à l'adresse fgamer768 ou rejoindre le serveur Discord dédié.
+
+En téléchargeant, installant ou utilisant le Logiciel, vous acceptez pleinement et sans réserve les termes de ce Contrat de Licence Utilisateur Final.
+
+FGAMER768

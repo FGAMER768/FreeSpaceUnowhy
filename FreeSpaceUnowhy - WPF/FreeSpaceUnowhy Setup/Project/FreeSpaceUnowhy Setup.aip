@@ -44,6 +44,7 @@
     <ROW Directory="Crashpad_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Crashpad"/>
     <ROW Directory="DawnCache_Dir" Directory_Parent="Default_Dir" DefaultDir="DAWNCA~1|DawnCache"/>
     <ROW Directory="Default_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Default"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
     <ROW Directory="DownloadService_Dir" Directory_Parent="Default_Dir" DefaultDir="DOWNLO~1|Download Service"/>
     <ROW Directory="EBWebView_Dir" Directory_Parent="FreeSpaceUnowhyWPF.exe.WebView2_Dir" DefaultDir="EBWEBV~1|EBWebView"/>
     <ROW Directory="EdgeEDrop_Dir" Directory_Parent="Default_Dir" DefaultDir="EDGEED~1|EdgeEDrop"/>
@@ -67,6 +68,7 @@
     <ROW Directory="OriginTrials_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="ORIGIN~1|OriginTrials"/>
     <ROW Directory="PKIMetadata_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="PKIMET~1|PKIMetadata"/>
     <ROW Directory="PersistentOriginTrials_Dir" Directory_Parent="Default_Dir" DefaultDir="PERSIS~1|PersistentOriginTrials"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
     <ROW Directory="RemoteData_Dir" Directory_Parent="SmartScreen_Dir" DefaultDir="REMOTE~1|RemoteData"/>
     <ROW Directory="SafeBrowsingNetwork_Dir" Directory_Parent="Default_Dir" DefaultDir="SAFEBR~1|Safe Browsing Network"/>
     <ROW Directory="SessionStorage_Dir" Directory_Parent="Default_Dir" DefaultDir="SESSIO~1|Session Storage"/>
@@ -758,6 +760,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="FreeSpaceUnowhySetup.exe" SourcePath="..\Ressources\FreeSpaceUnowhy-Setup.ico" Index="0"/>
+    <ROW Name="StartMenuFolder.exe" SourcePath="..\Ressources\FreeSpaceUnowhy.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -809,6 +812,11 @@
     <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
     <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="FreeSpaceUnowhy" Directory_="FreeSpaceUnowhy_Dir" Name="FREESP~1|FreeSpaceUnowhy" Component_="AI_ExePath" Target="[StartMenuFolder]" Hotkey="0" Icon_="StartMenuFolder.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="FreeSpaceUnowhy_1" Directory_="DesktopFolder" Name="FREESP~1|FreeSpaceUnowhy" Component_="FreeSpaceUnowhyWPF.exe" Target="[#FreeSpaceUnowhyWPF.exe]" Hotkey="0" Icon_="StartMenuFolder.exe" IconIndex="0" ShowCmd="1" WkDir="FreeSpaceUnowhy_Dir"/>
+    <ROW Shortcut="FreeSpaceUnowhy_2" Directory_="ProgramMenuFolder" Name="FREESP~1|FreeSpaceUnowhy" Component_="FreeSpaceUnowhyWPF.exe" Target="[#FreeSpaceUnowhyWPF.exe]" Hotkey="0" Icon_="StartMenuFolder.exe" IconIndex="0" ShowCmd="1" WkDir="FreeSpaceUnowhy_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="surface"/>
