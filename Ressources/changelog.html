@@ -1,0 +1,383 @@
+<head>
+  <style>
+    body {
+      background-color: #272537;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-feature-settings: "kern" 1;
+      -moz-font-feature-settings: "kern" 1;
+      -o-font-feature-settings: "kern" 1;
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      padding: 30px;
+    }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #272537;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+  border: 3px solid #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.scroll-container {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.scroll-content {
+  padding: 10px;
+  color: #eee;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #1f1f1f;
+}
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      padding: 5px;
+    }
+  
+    body > #content {
+      padding: 0px 20px 20px 20px !important;
+    }
+  }
+  
+  body > #content {
+    margin: 0px;
+    max-width: 900px;
+    border: 1px solid #e1e4e8;
+    padding: 10px 40px;
+    padding-bottom: 20px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  hr {
+    color: #bbb;
+    background-color: #bbb;
+    height: 1px;
+    flex: 0 1 auto;
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+  }
+  
+  /**
+   * Links
+   */
+  a {
+    color: #0366d6;
+    text-decoration: none; }
+    a:visited {
+      color: #0366d6; }
+    a:hover {
+      color: #0366d6;
+      text-decoration: underline; }
+  
+  pre {
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    font-size: 85%;
+    line-height: 1.45;
+    overflow: auto;
+    padding: 16px;
+  }
+  
+  /**
+    * Code blocks
+    */
+  
+  code {
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+    font-size: 85%;
+    margin: 0;
+    word-wrap: break-word;
+    padding: .2em .4em;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  }
+  
+  pre > code {
+    background-color: transparent;
+    border: 0;
+    display: inline;
+    line-height: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    word-wrap: normal;
+    font-size: 100%;
+  }
+  
+  
+  /**
+   * Blockquotes
+   */
+  blockquote {
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    border-left-width: 3px;
+    padding: 0 1em;
+    color: #828282;
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+  }
+  blockquote * {
+    font-style: normal !important;
+    letter-spacing: 0;
+    color: #6a737d !important;
+  }
+  
+  /**
+   * Tables
+   */
+  table {
+    border-spacing: 2px;
+    display: block;
+    font-size: 14px;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 16px;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+  }
+  
+  th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+  }
+  
+  tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+  }
+  
+  table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+  
+  /**
+   * Others
+   */
+  
+  img {
+    max-width: 100%;
+  }
+  
+  p {
+    font: "Segoe UI", normal;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff; }
+  
+  ul {
+    margin-top: 0; }
+  
+  li {
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; }
+  
+  li + li {
+    margin-top: 0.25em; }
+  
+  * {
+    font-family: Segoe UI Emoji;
+    color: #000000; }
+  
+  a:visited {
+    color: #0366d6; }
+ 
+h3 {
+      color: #ffffff;
+    }
+
+    h1,
+    h2 {
+      border-bottom: 1px solid #292929;
+      color: #ffffff;
+    }
+  </style>
+</head>
+  
+  
+<body>
+   <h1 id="FreeSpaceUnowhy-changelog">FreeSpaceUnowhy Change Log</h1>
+  <h2 id="-ajoutés-changements-enlevés">✅ : Ajoutés | ↪️ : Changements | ❌ : Enlevés</h2>
+  
+  <h2>10.0</h2>
+  <h3>Mise à jour du style, ajout de fonctionalités : </h3>
+  <ul>
+    <li>❌ - Enlevé : Bouton Rechercher</li>
+    <li>❌ - Enlevé : Boutons "Réduire" et "Fermer" </li>
+    <li>✅ - Ajout : Spécifications PC : Processeur</li>
+    <li>✅ - Ajout : Spécifications PC : GPU ( Carte Graphique )</li>
+    <li>✅ - Ajout : Spécifications PC : RAM ( Quantité de RAM )</li>
+    <li>✅ - Ajout : Spécifications PC : Version Windows</li>
+    <li>✅ - Ajout : Spécifications PC : Stockage Restant/Total</li>
+    <li>✅ - Ajout : Spécifications PC : Menu Secret accessible via un mot de passe</li>
+    <li>✅ - Ajout : Animations sur les boutons</li>
+    <li>✅ - Ajout : Accueil : Dédicace aux contributeurs</li>
+    <li>✅ - Ajout : Date et Heure</li>
+    <li>✅ - Ajout : Page "Infos PC" ( Spécifications PC )</li>
+    <li>✅ - Ajout : Page "Paramètres"</li>
+    <li>✅ - Ajout : Paramètres : "A Propos"</li>
+    <li>✅ - Ajout : Paramètres : "Dernière Version"</li>
+    <li>✅ - Ajout : Paramètres : Changelog intégré</li>
+    <li>✅ - Ajout : EXE : FreeSpaceUnowhy Installable</li>
+    <li>✅ - Ajout : EXE : FreeSpaceUnowhy Portable</li>
+    <li>↪️ - Changement : Modification des boutons</li>
+    <li>↪️ - Changement : Couleurs des boutons changés</li>
+    <li>↪️ - Changement : Style du logiciel </li>
+    <li>↪️ - Changement : Fenetre modifiée </li>
+  </ul>
+  
+  <h2>9.0</h2>
+  <h3>Grande mise à jour ( grands changements, beaucoup d'ajouts ) : </h3>
+  <ul>
+    <li>✅ - Ajout : Bouton Rechercher ( non fonctionnel )</li>
+    <li>✅ - Ajout : Nouveaux Boutons</li>
+    <li>↪️ - Passage de WINFORM --> WPF</li>
+    <li>↪️ - Modification de toute l'UI, GUI</li>
+    <li>↪️ - Interface plus fluide</li>
+    <li>↪️ - Application moins volumineuse</li>
+  </ul>
+  <h2>8.1</h2>
+  <h3>Correctifs et Ajouts : </h3>
+  <ul>
+    <li>✅ - Ajout : Son de chargement au lancement de l'accueil</li>
+    <li>↪️ - Interface : Correction de quelques bugs</li>
+    <li>↪️ - Système : Le logiciel ne s'exécute plus en arrière plan</li>
+  </ul>
+ <h2>8.0</h2>
+  <h3>Grande mise à jour ( beaucoup d'ajouts ) : </h3>
+  <ul>
+    <li>✅ - Ajout : Bouton "Version"</li>
+    <li>✅ - Ajout : Bouton "Mettre à jour"</li>
+    <li>✅ - Ajout : "Date"</li>
+    <li>✅ - Ajout : "Heure"</li>
+    <li>✅ - Ajout : Son au démarrage</li>
+    <li>↪️ - Interface : Page "Loading"</li>
+  </ul>
+<h2>7.0</h2>
+  <h3>Correctifs et Ajouts : </h3>
+  <ul>
+    <li>✅ - Ajout : Page "Launcher"</li>
+    <li>✅ - Ajout : Bouton "UnowhyTools"</li>
+    <li>↪️ - Système : Le redémarrage n'est plus nécessaire</li>
+    <li>↪️ - Icone "Accueil"</li>
+    <li>↪️ - Icone "Paramètres"</li>
+    <li>↪️ - Icone "Infos PC"</li>
+    <li>↪️ - Icone "Libérer de l'espace"</li>
+    <li>↪️ - Interface : Résolution des erreurs d'interface</li>
+    <li>↪️ - Interface : Taille de la fenetre</li>
+  </ul>
+<h2>6.2</h2>
+  <h3>Correctifs et Ajouts : </h3>
+  <ul>
+    <li>✅ - Ajouts : Boutons "Quitter/Minimiser"</li>
+    <li>↪️ - Interface : Résolution des erreurs d'interface</li>
+    <li>↪️ - Interface : Fenetre arrondie</li>
+    <li>↪️ - Interface : Emplacement "username"</li>
+  </ul>
+<h2>6.1</h2>
+  <h3>Correctifs et Ajouts : </h3>
+  <ul>
+    <li>✅ - Ajout : Fenetre "Loading"</li>
+    <li>✅ - Ajout : Bouton "Github"</li>
+    <li>✅ - Ajout : Bouton "YouTube"</li>
+    <li>↪️ - Icone "Accueil"</li>
+    <li>↪️ - Icone "Paramètres"</li>
+    <li>↪️ - Icone "Infos PC"</li>
+    <li>↪️ - Icone "Libérer de l'espace"</li>
+    <li>↪️ - Interface : Résolution des erreurs d'interface</li>
+    <li>↪️ - Interface : Taille de la fenetre</li>
+  </ul>
+<h2>6.0</h2>
+  <h3>Plus grande mise à jour de FreeSpaceUnowhy : </h3>
+  <ul>
+    <li>✅ - Ajout : Bouton "Accueil"</li>
+    <li>✅ - Ajout : Bouton "Paramètres"</li>
+    <li>✅ - Ajout : Bouton "Infos PC"</li>
+    <li>✅ - Ajout : Bouton "Libérer de l'espace"</li>
+    <li>↪️ - Icone "Accueil"</li>
+    <li>↪️ - Icone "Paramètres"</li>
+    <li>↪️ - Icone "Infos PC"</li>
+    <li>↪️ - Icone "Libérer de l'espace"</li>
+    <li>↪️ - Interface : Changement complet de l'interface</li>
+    <li>❌ - Fond enlevé</li>
+    <li>❌ - "Easter Egg" enlevé</li>
+  </ul>
+<h2>5.1</h2>
+  <h3>Correctifs et ajouts : </h3>
+  <ul>
+    <li>✅ - Nouveau Menu : Easter Egg</li>
+    <li>↪️ - Interface : Meilleure Interface générale</li>
+    <li>✅ - Nouveaux Boutons</li>
+  </ul>
+    <h2>5.0</h2>
+  <h3>Ajouts  : </h3>
+  <ul>
+    <li>✅ - Nouveau Menu : Easter Egg</li>
+    <li>✅ - Nouveaux boutons</li>
+    <li>✅ - Ajout de suppression : Educadhoc</li>
+    <li>✅ - Nouveau Menu : Spécifications</li>
+  </ul>
+    <h2>4.0</h2>
+    <h3>Ajouts et Modifications  : </h3>
+    <ul>
+      <li>✅ - Ajout de suppression : HiSqool</li>
+      <li>✅ - Nouveaux boutons</li>
+      <li>↪️ - Interface : Meilleur menu principal</li>
+    </ul>
+      <h2>3.1</h2>
+    <h3>Modifications, Correctifs  : </h3>
+    <ul>
+      <li>↪️ - Interface : Meilleur menu de chargementl</li>
+      <li>↪️ - Bouton retour amélioré</li>
+      <li>↪️ - Emplacement de l'icone GitHub</li>
+    </ul>
+      <h2>3.0</h2>
+      <h3>Interface, Suppresions et Ajouts  : </h3>
+      <ul>
+        <li>✅ - Interface : Ajout d'un nouveau fond</li>
+        <li>↪️ - Amélioration de l'interface</li>
+        <li>↪️ - Changements : Meilleure utilisation</li>
+        <li>❌ - Suppression des fichiers "Inutiles"</li>
+        <li>❌ - Fond enlevé</li>
+      </ul>
+        <h2>2.0</h2>
+      <h3>Interface, Modificatons et Ajouts  : </h3>
+      <ul>
+        <li>✅ - Ajout de suppression : Lelivrescolaire</li>
+        <li>✅ - Ajout d'une icone sur l'executable </li>
+        <li>↪️ - Changements : Interface</li>
+        <li>↪️ - Modifications des suppressions : Le logiciel supprime complètement VSCode et les fichiers inutiles</li>
+      </ul>
+	<h2>1.0</h2>
+      <h3>Première version du logiciel  : </h3>
+      <ul>
+        <li>Rien à afficher ici</li>
+      </ul>
+  
+
+  
