@@ -30,6 +30,10 @@
                 <view:SystemInfoView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:InstallerViewModel}">
+                <view:InstallerView/>
+            </DataTemplate>
+
 
 
 

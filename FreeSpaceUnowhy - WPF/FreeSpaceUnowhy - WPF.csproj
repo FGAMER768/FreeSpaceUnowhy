@@ -100,11 +100,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\DownloadProgressWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\FreeSpaceView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\InstallerDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\InstallerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,14 +141,24 @@
   <ItemGroup>
     <Compile Include="MVVM\ViewModel\FreeSpaceViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\InstallerViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SystemInfoViewModel.cs" />
+    <Compile Include="MVVM\View\DownloadProgressWindow.xaml.cs">
+      <DependentUpon>DownloadProgressWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\FreeSpaceView.xaml.cs">
       <DependentUpon>FreeSpaceView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\InstallerDialog.xaml.cs">
+      <DependentUpon>InstallerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\InstallerView.xaml.cs">
+      <DependentUpon>InstallerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
@@ -244,6 +266,9 @@
     <Resource Include="Images\Home-Icon.png" />
     <Resource Include="Images\Bin-Icon.png" />
     <Resource Include="Images\Clock-Icon.png" />
+    <Resource Include="Images\Download-Icon.png" />
+    <Resource Include="Images\Loading-Icon.png" />
+    <Resource Include="Images\Install-Icon.png" />
     <Content Include="Keys\1Sound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

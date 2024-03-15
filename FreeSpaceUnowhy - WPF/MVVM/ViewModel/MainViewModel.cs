@@ -12,11 +12,13 @@ namespace FreeSpaceUnowhy___WPF.MVVM.ViewModel
         public RelayCommand FreeSpaceViewCommand { get; set; }
         public RelayCommand SettingsViewCommand { get; set; }
         public RelayCommand SystemInfoViewCommand { get; set; }
+        public RelayCommand InstallerViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public FreeSpaceViewModel FreeSpaceVM { get; set; }
         public SettingsViewModel SettingsVM { get; set; }
         public SystemInfoViewModel SystemInfoVM { get; set; }
+        public InstallerViewModel InstallerVM { get; set; }
 
         private object _currentView;
         public object CurrentView
@@ -79,6 +81,7 @@ namespace FreeSpaceUnowhy___WPF.MVVM.ViewModel
             FreeSpaceVM = new FreeSpaceViewModel();
             SettingsVM = new SettingsViewModel();
             SystemInfoVM = new SystemInfoViewModel();
+            InstallerVM = new InstallerViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommand = new RelayCommand(o =>
@@ -98,6 +101,10 @@ namespace FreeSpaceUnowhy___WPF.MVVM.ViewModel
             SystemInfoViewCommand = new RelayCommand(o =>
             {
                 CurrentView = SystemInfoVM;
+            });
+            InstallerViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = InstallerVM;
             });
 
             Username = Environment.UserName;

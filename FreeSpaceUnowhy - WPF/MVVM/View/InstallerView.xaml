@@ -1,0 +1,198 @@
+﻿<UserControl x:Class="FreeSpaceUnowhy___WPF.MVVM.View.InstallerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="GradientBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#9600FF" />
+            <GradientStop Offset="1" Color="#AEBAF7" />
+        </LinearGradientBrush>
+    </UserControl.Resources>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0">
+            <Image Source="/Images/Install-Icon.png" 
+           Height="48" 
+           Width="48" 
+           VerticalAlignment="Center"/>
+            <TextBlock Text="Installer des Applications : "
+               Foreground="White"
+               FontSize="28"
+               VerticalAlignment="Center"
+               FontFamily="/Fonts/#Poppins"
+               Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10"/>
+        <StackPanel>
+
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text=""
+                       Foreground="White"
+                       FontSize="20"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,20"/>
+
+            <StackPanel Orientation="Horizontal">
+                
+
+                <Border x:Name="GeogebraInstall" Width="150"
+                        Height="150"
+                        Background="{StaticResource GradientBrush}"
+                        CornerRadius="10" 
+                        Cursor="Hand" 
+                        MouseLeftButtonDown="OnGeogebraButtonClick"
+                        MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave"
+                        Margin="0">
+                    <Grid>
+                        <Image Source="/Images/Geogebra-Icon.png" 
+                               Height="80" 
+                               Width="80" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Top"
+                               Margin="10"/>
+                        <TextBlock Text="Geogebra" 
+                                   Foreground="White" 
+                                   FontSize="25" 
+                                   FontFamily="/Fonts/#Poppins" 
+                                   VerticalAlignment="Bottom" 
+                                   HorizontalAlignment="Center"
+                                   Margin="10"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="ThonnyInstall" Width="150"
+            Height="150"
+            Background="{StaticResource GradientBrush}"
+            CornerRadius="10" 
+            Cursor="Hand" 
+            MouseLeftButtonDown="OnThonnyButtonClick"
+            MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Grid>
+                        <Image Source="/Images/Thonny-Icon.png" 
+                   Height="80" 
+                   Width="80" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10"/>
+                        <TextBlock Text="Thonny" 
+                       Foreground="White" 
+                       FontSize="25" 
+                       FontFamily="/Fonts/#Poppins" 
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="LibManuelsInstall" Width="150"
+            Height="150"
+            Background="{StaticResource GradientBrush}"
+            CornerRadius="10" 
+            Cursor="Hand" 
+            MouseLeftButtonDown="OnLibManuelsButtonClick"
+            MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Grid>
+                        <Image Source="/Images/LibManuels-Icon.png" 
+                   Height="80" 
+                   Width="80" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10"/>
+                        <TextBlock Text="LibManuels" 
+                       Foreground="White" 
+                       FontSize="24" 
+                       FontFamily="/Fonts/#Poppins" 
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Border x:Name="EducadhocInstall" Width="150"
+            Height="150"
+            Background="{StaticResource GradientBrush}"
+            CornerRadius="10"
+            Margin="0,10" Cursor="Hand" 
+            MouseLeftButtonDown="OnEducadhocButtonClick"
+            MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Grid>
+                        <Image Source="/Images/Educadhoc-Icon.png" 
+                   Height="80" 
+                   Width="80" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10"/>
+                        <TextBlock Text="Educadhoc" 
+                       Foreground="White" 
+                       FontSize="24" 
+                       FontFamily="/Fonts/#Poppins" 
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="L_L_ScolaireInstall" Width="150"
+            Height="150"
+            Background="{StaticResource GradientBrush}"
+            CornerRadius="10" 
+            Cursor="Hand" 
+            MouseLeftButtonDown="OnLLScolaireButtonClick"
+            MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Grid>
+                        <Image Source="/Images/LeLivreScolaire-Icon.png" 
+                   Height="80" 
+                   Width="80" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10"/>
+                        <TextBlock Text="L.L.Scolaire" 
+                       Foreground="White" 
+                       FontSize="23" 
+                       FontFamily="/Fonts/#Poppins" 
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="VSCodeInstall" Width="150"
+            Height="150"
+            Background="{StaticResource GradientBrush}"
+            CornerRadius="10" 
+            Cursor="Hand" 
+            MouseLeftButtonDown="OnVSCodeButtonClick"
+            MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Grid>
+                        <Image Source="/Images/VSCode-Icon.png" 
+                   Height="80" 
+                   Width="80" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10"/>
+                        <TextBlock Text="VSCode" 
+                       Foreground="White" 
+                       FontSize="25" 
+                       FontFamily="/Fonts/#Poppins" 
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+                    </Grid>
+                </Border>
+
+
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

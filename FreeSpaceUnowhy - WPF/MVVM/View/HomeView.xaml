@@ -17,7 +17,8 @@
             FontSize="28"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
-            Margin="5,0,0,0"/>
+            Margin="5,0,0,0"
+            FontFamily="/Fonts/#Poppins"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
@@ -36,12 +37,17 @@
                     <StackPanel>
                         <TextBlock Text="Unowhy Tools&#x0a;Le meilleur logiciel pour les Y13"
                                    Foreground="White"
-                                   FontSize="26"
-                                   Margin="20,10,10,0"/>
+                                   FontSize="24"
+                                   Margin="20,10,10,0"
+                                   FontFamily="/Fonts/#Poppins"/>
                         <TextBlock Margin="20,10,10,0">
                             <TextBlock.Inlines>
                                 <Hyperlink NavigateUri="https://github.com/STY1001/Unowhy-Tools" RequestNavigate="Hyperlink_RequestNavigate">
-                                    <TextBlock Text="Download Now !" Foreground="White" FontSize="30" TextDecorations="OverLine"/>
+                                    <TextBlock Text="Download Now !" 
+                                               Foreground="White" 
+                                               FontSize="30" 
+                                               TextDecorations="OverLine"
+                                               FontFamily="/Fonts/#Poppins"/>
                                 </Hyperlink>
 
                             </TextBlock.Inlines>

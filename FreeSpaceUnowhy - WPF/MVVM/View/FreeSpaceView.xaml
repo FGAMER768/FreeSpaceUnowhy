@@ -22,7 +22,8 @@
             <TextBlock Text="Libérer de l'espace : "
                    Foreground="White"
                    FontSize="28"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Center"
+                   FontFamily="/Fonts/#Poppins"/>
 
         </StackPanel>
         <StackPanel Orientation="Horizontal"
