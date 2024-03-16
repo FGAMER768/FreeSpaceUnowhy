@@ -16,7 +16,7 @@
     <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="FGAMER768"/>
     <ROW Property="ProductCode" Value="1033:{DF45A393-AC0F-4E75-A258-74DF1E06C69A} " Type="16"/>
-    <ROW Property="ProductLanguage" Value="1036"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="FreeSpaceUnowhy"/>
     <ROW Property="ProductVersion" Value="11.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
