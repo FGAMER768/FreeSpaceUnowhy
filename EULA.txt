@@ -14,7 +14,7 @@ Lors de l'exécution du Logiciel, il se peut que vous receviez un avertissement 
 
 Risque de bug :
 
-Le Logiciel a été soigneusement testé et les risques de bugs sont minimes. Les huit versions du Logiciel ont été testées au moins une trentaine de fois pour garantir leur fiabilité. Cependant, veuillez noter que l'utilisation du Logiciel se fait à vos propres risques.
+Le Logiciel a été soigneusement testé et les risques de bugs sont minimes. Les versions du Logiciel ont été testées au moins une trentaine de fois pour garantir leur fiabilité. Cependant, veuillez noter que l'utilisation du Logiciel se fait à vos propres risques.
 
 Lieu d'installation :
 
