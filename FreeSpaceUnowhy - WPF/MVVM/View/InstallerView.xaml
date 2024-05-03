@@ -8,8 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <LinearGradientBrush x:Key="GradientBrush" StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Offset="0" Color="#9600FF" />
-            <GradientStop Offset="1" Color="#AEBAF7" />
+            <GradientStop Offset="0" Color="#4A90E2" />
+            <GradientStop Offset="1" Color="#002F6C" />
         </LinearGradientBrush>
     </UserControl.Resources>
 
@@ -18,13 +18,20 @@
             <Image Source="/Images/Install-Icon.png" 
            Height="48" 
            Width="48" 
-           VerticalAlignment="Center"/>
+           VerticalAlignment="Center">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
             <TextBlock Text="Installer des Applications : "
                Foreground="White"
                FontSize="28"
-               VerticalAlignment="Center"
                FontFamily="/Fonts/#Poppins"
-               Margin="10,0,0,0"/>
+               Margin="10,0,0,0" VerticalAlignment="Bottom">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal"
@@ -43,7 +50,7 @@
                        Margin="0,0,0,20"/>
 
             <StackPanel Orientation="Horizontal">
-                
+
 
                 <Border x:Name="GeogebraInstall" Width="150"
                         Height="150"
@@ -53,20 +60,31 @@
                         MouseLeftButtonDown="OnGeogebraButtonClick"
                         MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave"
                         Margin="0">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/Geogebra-Icon.png" 
                                Height="80" 
                                Width="80" 
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Top"
-                               Margin="10"/>
+                               Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="Geogebra" 
                                    Foreground="White" 
                                    FontSize="25" 
                                    FontFamily="/Fonts/#Poppins" 
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Center"
-                                   Margin="10"/>
+                                   Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
 
@@ -77,20 +95,31 @@
             Cursor="Hand" 
             MouseLeftButtonDown="OnThonnyButtonClick"
             MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/Thonny-Icon.png" 
                    Height="80" 
                    Width="80" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
-                   Margin="10"/>
+                   Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="Thonny" 
                        Foreground="White" 
                        FontSize="25" 
                        FontFamily="/Fonts/#Poppins" 
                        VerticalAlignment="Bottom" 
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
 
@@ -101,20 +130,31 @@
             Cursor="Hand" 
             MouseLeftButtonDown="OnLibManuelsButtonClick"
             MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/LibManuels-Icon.png" 
                    Height="80" 
                    Width="80" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
-                   Margin="10"/>
+                   Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="LibManuels" 
                        Foreground="White" 
                        FontSize="24" 
                        FontFamily="/Fonts/#Poppins" 
                        VerticalAlignment="Bottom" 
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
             </StackPanel>
@@ -126,20 +166,31 @@
             Margin="0,10" Cursor="Hand" 
             MouseLeftButtonDown="OnEducadhocButtonClick"
             MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/Educadhoc-Icon.png" 
                    Height="80" 
                    Width="80" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
-                   Margin="10"/>
+                   Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="Educadhoc" 
                        Foreground="White" 
                        FontSize="24" 
                        FontFamily="/Fonts/#Poppins" 
                        VerticalAlignment="Bottom" 
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
 
@@ -150,20 +201,31 @@
             Cursor="Hand" 
             MouseLeftButtonDown="OnLLScolaireButtonClick"
             MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/LeLivreScolaire-Icon.png" 
                    Height="80" 
                    Width="80" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
-                   Margin="10"/>
+                   Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="L.L.Scolaire" 
                        Foreground="White" 
                        FontSize="23" 
                        FontFamily="/Fonts/#Poppins" 
                        VerticalAlignment="Bottom" 
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
 
@@ -174,20 +236,31 @@
             Cursor="Hand" 
             MouseLeftButtonDown="OnVSCodeButtonClick"
             MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Grid>
                         <Image Source="/Images/VSCode-Icon.png" 
                    Height="80" 
                    Width="80" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
-                   Margin="10"/>
+                   Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="VSCode" 
                        Foreground="White" 
                        FontSize="25" 
                        FontFamily="/Fonts/#Poppins" 
                        VerticalAlignment="Bottom" 
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
 

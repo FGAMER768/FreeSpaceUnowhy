@@ -42,8 +42,8 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
         {
             if (sender is Border border)
             {
-                AnimateButtonColor(border, "#AEBAF7", "#9600FF");
-                AnimateZoomIn(border);
+               
+                AnimateButtonColor(border, "#4A90E2", "#00D4FF");
             }
         }
 
@@ -51,10 +51,11 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
         {
             if (sender is Border border)
             {
-                AnimateButtonColor(border, "#9600FF", "#AEBAF7");
-                AnimateZoomOut(border);
+                // Revenir à la couleur de base
+                AnimateButtonColor(border, "#002F6C", "#4A90E2");  
             }
         }
+
 
         private void AnimateZoomIn(UIElement element)
         {

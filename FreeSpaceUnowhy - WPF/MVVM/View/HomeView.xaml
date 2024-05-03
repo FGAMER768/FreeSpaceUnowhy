@@ -11,23 +11,34 @@
             <Image Source="/Images/Home-Icon.png" 
             Height="48" 
             Width="48" 
-            VerticalAlignment="Center"/>
-        <TextBlock Text="Découvrir : "
+            VerticalAlignment="Center">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
+            <TextBlock Text="Découvrir : "
             Foreground="White"
             FontSize="28"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
-            Margin="5,0,0,0"
-            FontFamily="/Fonts/#Poppins"/>
+            Margin="10,0,0,0"
+            FontFamily="/Fonts/#Poppins">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
             <Border Width="400" Height="200"
                     MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Offset="0" Color="#9600FF" />
-                        <GradientStop Offset="1" Color="#AEBAF7" />
+                        <GradientStop Offset="0" Color="#4A90E2" />
+                        <GradientStop Offset="1" Color="#002F6C" />
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
@@ -39,7 +50,11 @@
                                    Foreground="White"
                                    FontSize="24"
                                    Margin="20,10,10,0"
-                                   FontFamily="/Fonts/#Poppins"/>
+                                   FontFamily="/Fonts/#Poppins">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                         <TextBlock Margin="20,10,10,0">
                             <TextBlock.Inlines>
                                 <Hyperlink NavigateUri="https://github.com/STY1001/Unowhy-Tools" RequestNavigate="Hyperlink_RequestNavigate">
@@ -47,33 +62,52 @@
                                                Foreground="White" 
                                                FontSize="30" 
                                                TextDecorations="OverLine"
-                                               FontFamily="/Fonts/#Poppins"/>
+                                               FontFamily="/Fonts/#Poppins">
+                                        <TextBlock.Effect>
+                                            <DropShadowEffect/>
+                                        </TextBlock.Effect>
+                                    </TextBlock>
                                 </Hyperlink>
 
                             </TextBlock.Inlines>
                         </TextBlock>
                     </StackPanel>
-                    <Image Width="125" Height="125" Source="/Images/UT ICON.png" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                    <Image Width="125" Height="125" Source="/Images/UT ICON.png" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                 </Grid>
             </Border>
             <Border Width="229" Height="200" CornerRadius="10" Margin="20,0,0,0" MouseLeftButtonDown="OnRepoClick" Cursor="Hand"
                     MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#9600FF" Offset="0.0"/>
-                        <GradientStop Color="#AEBAF7" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Offset="0" Color="#4A90E2" />
+                        <GradientStop Offset="1" Color="#002F6C" />
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid>
                     <Image Source="/Images/FGAMER768-Icon.png" Width="150" Height="150"
-                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+                           HorizontalAlignment="Center" VerticalAlignment="Center" >
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="Repo GITHUB"
                                Foreground="White"
                                FontSize="23"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Bottom"
                                FontFamily="/Fonts/#Poppins"
-                               Margin="0,0,0,10" />
+                               Margin="0,0,0,10" >
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
         </StackPanel>
@@ -89,14 +123,21 @@
                        FontSize="20"
                        FontFamily="/Fonts/#Poppins"
                        HorizontalAlignment="Left"
-                       Margin="0,0,0,20"/>
+                       Margin="0,0,0,20">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
             <StackPanel Orientation="Horizontal">
                 <Border x:Name="AboutBorder" Width="200" Height="100" CornerRadius="10" Margin="0" Cursor="Hand" MouseLeftButtonDown="OnAboutButtonClick"
                         MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="0" Color="#9600FF" />
-                            <GradientStop Offset="1" Color="#AEBAF7" />
+                            <GradientStop Offset="0" Color="#4A90E2" />
+                            <GradientStop Offset="1" Color="#002F6C" />
                         </LinearGradientBrush>
                     </Border.Background>
                     <Grid>
@@ -105,22 +146,34 @@
                                Width="55" 
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Top"
-                               Margin="10"/>
+                               Margin="10">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="A propos" 
                                    Foreground="White" 
                                    FontSize="20" 
                                    FontFamily="/Fonts/#Poppins" 
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Center"
-                                   Margin="10"/>
+                                   Margin="10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </Grid>
                 </Border>
                 <Border x:Name="ContributorsBorder" Width="476" Height="100" CornerRadius="10" MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="0" Color="#9600FF" />
-                            <GradientStop Offset="1" Color="#AEBAF7" />
+                            <GradientStop Offset="0" Color="#4A90E2" />
+                            <GradientStop Offset="1" Color="#002F6C" />
                         </LinearGradientBrush>
+
                     </Border.Background>
                     <Grid>
                         <TextBlock Text="Contributeurs : " 
@@ -129,14 +182,22 @@
                                    FontFamily="/Fonts/#Poppins" 
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Left"
-                                   Margin="10,0,0,60"/>
+                                   Margin="10,0,0,60">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                         <TextBlock Text="STY1001" 
                                    Foreground="White" 
                                    FontSize="20" 
                                    FontFamily="/Fonts/#Poppins" 
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Left"
-                                   Margin="186,0,0,10"/>
+                                   Margin="186,0,0,10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                         <Image Source="/Images/STY1001_PP.png" 
                                Height="100" 
                                Width="100" 
@@ -144,14 +205,22 @@
                                VerticalAlignment="Top"
                                Margin="-13"
                                Cursor="Hand"
-                               MouseLeftButtonDown="OnSTY1001ButtonClick"/>
+                               MouseLeftButtonDown="OnSTY1001ButtonClick">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                         <TextBlock Text="Ahhj93" 
                                    Foreground="White" 
                                    FontSize="20" 
                                    FontFamily="/Fonts/#Poppins" 
                                    VerticalAlignment="Bottom" 
                                    HorizontalAlignment="Left"
-                                   Margin="291,0,0,10"/>
+                                   Margin="291,0,0,10">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                         <Image Source="/Images/AHHJ93_PP.png" 
                                Height="50" 
                                Width="50" 
@@ -159,7 +228,11 @@
                                VerticalAlignment="Top"
                                Margin="300,10,0,0"
                                Cursor="Hand"
-                               MouseLeftButtonDown="OnAHHJ93ButtonClick"/>
+                               MouseLeftButtonDown="OnAHHJ93ButtonClick">
+                            <Image.Effect>
+                                <DropShadowEffect/>
+                            </Image.Effect>
+                        </Image>
                     </Grid>
                 </Border>
             </StackPanel>

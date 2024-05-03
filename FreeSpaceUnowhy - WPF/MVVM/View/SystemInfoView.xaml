@@ -6,16 +6,16 @@
              xmlns:local="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.View"
              xmlns:viewModel="clr-namespace:FreeSpaceUnowhy___WPF.MVVM.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="460" d:DesignWidth="800"
-             PreviewKeyDown="UserControl_PreviewKeyDown">
+             d:DesignHeight="460" d:DesignWidth="800">
+    
     <UserControl.DataContext>
         <viewModel:SystemInfoViewModel/>
     </UserControl.DataContext>
 
     <UserControl.Resources>
         <LinearGradientBrush x:Key="GradientBrush" StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Offset="0" Color="#9600FF"/>
-            <GradientStop Offset="1" Color="#AEBAF7"/>
+            <GradientStop Offset="0" Color="#4A90E2" />
+            <GradientStop Offset="1" Color="#002F6C" />
         </LinearGradientBrush>
     </UserControl.Resources>
 
@@ -24,13 +24,21 @@
             <Image Source="/Images/Info-Icon.png" 
                Height="48" 
                Width="48" 
-               VerticalAlignment="Center"/>
+               VerticalAlignment="Center">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
             <TextBlock Text="Informations PC : "
                    Foreground="White"
                    FontSize="28"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"
-                   Margin="5,0,0,0"/>
+                   Margin="5,0,0,0">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
         </StackPanel>
 
             <StackPanel Orientation="Horizontal">
@@ -40,20 +48,31 @@
                     Margin="0"
                     Background="{StaticResource GradientBrush}"
                     MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Grid>
                     <Image Source="/Images/Windows-Icon.png" 
                            Height="80" 
                            Width="80" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Top"
-                           Margin="10"/>
+                           Margin="10">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="{Binding WindowsVersion}" 
                                Foreground="White"
                                FontSize="23" 
                                FontFamily="/Fonts/#Poppins" 
                                VerticalAlignment="Bottom" 
                                HorizontalAlignment="Center"
-                               Margin="10"/>
+                               Margin="10">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
             <Border Width="306"
@@ -62,6 +81,9 @@
                     Margin="10"
                     Background="{StaticResource GradientBrush}"
                     MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -73,7 +95,11 @@
                            Width="60" 
                            HorizontalAlignment="Left" 
                            VerticalAlignment="Center"
-                           Margin="10,0"/>
+                           Margin="10,0">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
 
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="{Binding AvailableSpaceFormatted}"
@@ -82,7 +108,11 @@
                                    FontFamily="/Fonts/#Poppins"
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Left"
-                                   Margin="10,32"/>
+                                   Margin="10,32">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
 
                         <TextBlock Text="{Binding TotalSpaceFormatted}" 
                                    Foreground="White"
@@ -90,7 +120,11 @@
                                    FontFamily="/Fonts/#Poppins"
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Left"
-                                   Margin="10,-20"/>
+                                   Margin="10,-20">
+                            <TextBlock.Effect>
+                                <DropShadowEffect/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </StackPanel>
                     <Border BorderBrush="White" 
                             BorderThickness="3"
@@ -111,23 +145,6 @@
                     </Border>
                 </Grid>
             </Border>
-            <Border Width="134"
-                Height="50"
-                CornerRadius="10"
-                Background="{StaticResource GradientBrush}"
-                MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave"
-                    Margin="50,10,0,90">
-                <TextBox x:Name="secretTextBox"
-                    TextWrapping="Wrap"  
-                    Background="Transparent"
-                    Width="112"
-                    Height="25"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Text="Entrez le mot secret"
-                    KeyUp="OnSecretTextBoxKeyUp"
-                    GotFocus="OnSecretTextBoxGotFocus"/>
-            </Border>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Border Width="595"
@@ -136,6 +153,9 @@
                 Margin="0,10"
                 Background="{StaticResource GradientBrush}"
                 MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" RenderTransformOrigin="0.5,0.5">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -154,14 +174,22 @@
                         Width="80" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Center"
-                        Margin="5"/>
+                        Margin="5">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="{Binding CPUInfo}" 
                         Foreground="White"
                         FontSize="23" 
                         FontFamily="/Fonts/#Poppins" 
                         VerticalAlignment="Center" 
                         HorizontalAlignment="Center"
-                        Margin="100,0,0,0"/>
+                        Margin="100,0,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
         </StackPanel>
@@ -172,6 +200,9 @@
                 Margin="0,10"
                 Background="{StaticResource GradientBrush}"
                 MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" RenderTransformOrigin="0.5,0.5">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -190,14 +221,22 @@
                         Width="80" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Center"
-                        Margin="5"/>
+                        Margin="5">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="{Binding RAMInfo}" 
                         Foreground="White"
                         FontSize="23" 
                         FontFamily="/Fonts/#Poppins" 
                         VerticalAlignment="Center" 
                         HorizontalAlignment="Center"
-                        Margin="50,0,0,0"/>
+                        Margin="50,0,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
             <Border Width="406"
@@ -206,6 +245,9 @@
                     Margin="10"
                 Background="{StaticResource GradientBrush}"
                 MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" RenderTransformOrigin="0.5,0.5">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -224,14 +266,22 @@
                         Width="80" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Center"
-                        Margin="5"/>
+                        Margin="5">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="{Binding GraphicsCardInfo}" 
                         Foreground="White"
                         FontSize="21" 
                         FontFamily="/Fonts/#Poppins" 
                         VerticalAlignment="Center" 
                         HorizontalAlignment="Center"
-                        Margin="60,0,0,0"/>
+                        Margin="60,0,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
         </StackPanel>

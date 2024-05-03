@@ -1,7 +1,9 @@
 ﻿using FreeSpaceUnowhy___WPF.MVVM.ViewModel;
+using FreeSpaceUnowhy___WPF.MVVM.View;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Input;
 
 namespace FreeSpaceUnowhy___WPF
 {
@@ -33,15 +35,13 @@ namespace FreeSpaceUnowhy___WPF
         }
 
         
-        
+       
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        
-
     }
 }

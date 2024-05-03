@@ -25,7 +25,10 @@
                Width="70" Height="70" 
                Margin="0,40,0,0"
                VerticalAlignment="Top">
-            
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+
             <Image.RenderTransformOrigin>
                 <Point X="0.5" Y="0.5"/>
             </Image.RenderTransformOrigin>

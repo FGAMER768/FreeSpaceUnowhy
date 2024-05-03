@@ -30,6 +30,21 @@ By FGAMER768
 
   <h1 id="FreeSpaceUnowhy-changelog">FreeSpaceUnowhy Change Log</h1>
   <h2 id="-ajoutés-changements-enlevés">✅ : Ajoutés | ↪️ : Changements | ❌ : Enlevés</h2>
+  
+  <h2>11.0</h2>
+    <h3>Mise à jour du style, ajout de fonctionalités : </h3>
+    <ul>
+        <li>✅ - Ajout : Installateur</li>
+        <li>✅ - Ajout : Installateur : Réinstaller les applications supprimées</li>
+        <li>✅ - Ajout : Installateur : Demande de confirmation d'installation'</li>
+        <li>✅ - Ajout : Installateur : FreeSpaceUnowhy récupère les fichiers directement par internet</li>
+        <li>✅ - Ajout : Installateur : Fenetre d'installation</li>
+        <li>↪️ - Changement : Font "Poppins"</li>
+        <li>↪️ - Changement : Icones modifiées</li>
+        <li>↪️ - Changement : Icones améliorées </li>
+        <li>↪️ - Changement : Setup modifié </li>
+    </ul>
+  
   <h2>10.0</h2>
   <h3>Mise à jour du style, ajout de fonctionalités : </h3>
   <ul>

@@ -89,7 +89,7 @@
                              Command="{Binding HomeViewCommand}"
                              FontFamily="/Fonts/#Poppins"
                              Cursor="Hand"/>
-                
+
 
                 <RadioButton Content="Libérer" 
                              Height="50" 

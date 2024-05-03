@@ -18,7 +18,11 @@
                Height="90" 
                VerticalAlignment="Center"
                HorizontalAlignment="Left"
-               Margin="10,0,0,0"/>
+               Margin="10,0,0,0">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
         <TextBlock Text="Êtes-vous sûr de vouloir continuer ?" 
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Top"
@@ -32,14 +36,22 @@
                     Content="Oui" 
                     Click="YesButton_Click" 
                     Width="130" 
-                    Margin="13,60,20,0"/>
-            
+                    Margin="13,60,20,0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
             <Button x:Name="NoButton" 
                     Content="Non" 
                     Click="NoButton_Click" 
                     Width="130"
-                    Margin="10,60,-80,0"/>
-            
+                    Margin="10,60,-80,0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
         </StackPanel>
 
     </Grid>

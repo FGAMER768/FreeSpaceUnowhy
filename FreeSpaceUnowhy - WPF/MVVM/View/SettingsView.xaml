@@ -11,8 +11,8 @@
     <UserControl.Resources>
 
         <LinearGradientBrush x:Key="GradientBrush" StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Offset="0" Color="#9600FF" />
-            <GradientStop Offset="1" Color="#AEBAF7" />
+            <GradientStop Offset="0" Color="#4A90E2" />
+            <GradientStop Offset="1" Color="#002F6C" />
         </LinearGradientBrush>
     </UserControl.Resources>
 
@@ -23,12 +23,20 @@
                    FontSize="28"
                    HorizontalAlignment="Left"
                    Margin="53,0,0,0"
-                   FontFamily="/Fonts/#Poppins" />
+                   FontFamily="/Fonts/#Poppins" >
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
         <Image Source="/Images/Settings-Icon.png" 
                     Height="48" 
                     Width="48" 
                     HorizontalAlignment="Left" 
-                    VerticalAlignment="Top"/>
+                    VerticalAlignment="Top">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
 
         <StackPanel Orientation="Horizontal"
                     Margin="0,50,0,0"
@@ -43,6 +51,9 @@
                     MouseEnter="OnMouseEnter"
                     MouseLeave="OnMouseLeave"
                     MouseLeftButtonDown="OnAboutButtonClick">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.Triggers>
                     <EventTrigger RoutedEvent="Border.MouseEnter">
                         <BeginStoryboard>
@@ -70,14 +81,22 @@
                            Width="55"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
-                           Margin="10" />
+                           Margin="10" >
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="A propos"
                                Foreground="White"
                                FontSize="20"
                                FontFamily="/Fonts/#Poppins"
                                VerticalAlignment="Bottom"
                                HorizontalAlignment="Center"
-                               Margin="10" />
+                               Margin="10" >
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
             <Border x:Name="LatestVersion"
@@ -90,6 +109,9 @@
                     MouseEnter="OnMouseEnter"
                     MouseLeave="OnMouseLeave"
                     MouseLeftButtonDown="OnLatestVersionButtonClick">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
                 <Border.Triggers>
                     <EventTrigger RoutedEvent="Border.MouseEnter">
                         <BeginStoryboard>
@@ -117,14 +139,22 @@
                            Width="55"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
-                           Margin="10" />
+                           Margin="10" >
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
                     <TextBlock Text="Dernière Version"
                                Foreground="White"
                                FontSize="20"
                                FontFamily="/Fonts/#Poppins"
                                VerticalAlignment="Bottom"
                                HorizontalAlignment="Center"
-                               Margin="10" />
+                               Margin="10" >
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </Grid>
             </Border>
         </StackPanel>
