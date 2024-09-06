@@ -43,5 +43,12 @@ namespace FreeSpaceUnowhy___WPF
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        private void OnCalculatorButtonClick(object sender, RoutedEventArgs e)
+        {
+            
+            Numworks numworksWindow = new Numworks();
+            numworksWindow.Show();
+        }
     }
 }

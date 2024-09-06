@@ -27,6 +27,7 @@
                     <DropShadowEffect/>
                 </TextBlock.Effect>
             </TextBlock>
+            
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
@@ -235,7 +236,11 @@
                         </Image>
                     </Grid>
                 </Border>
+                
             </StackPanel>
+
+            
+            
         </StackPanel>
     </StackPanel>
 </UserControl>

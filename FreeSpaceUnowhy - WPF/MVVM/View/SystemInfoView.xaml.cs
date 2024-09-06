@@ -23,7 +23,7 @@ namespace FreeSpaceUnowhy___WPF.MVVM.View
     /// </summary>
     public partial class SystemInfoView : UserControl
     {
-        private bool isEasterEggActivated = false;
+        
         public SystemInfoView()
         {
             InitializeComponent();
