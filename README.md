@@ -8,6 +8,8 @@ A Tool To Free Up Space On Unowhy PC's
 Ce logiciel est simple à utiliser et permet de désinstaller/supprimer des logiciels/dossiers que *vous estimez inutile pour votre pc*.
 Vous pouvez télecharger l'executable dans [Releases](https://github.com/FGAMER768/FreeSpaceUnowhy/releases).
 
+Le projet FreeSpaceUnowhy est désormais terminé. Aucune mise à jour ou support ne sera fourni à l'avenir. Vous pouvez toujours télécharger et utiliser la dernière version disponible, mais il n’y aura plus de nouvelles fonctionnalités ou corrections de bugs.
+
 - Avec ce logiciel, vous pouvez libérer de l'espace jusqu'à 10Go.
 
 - Lors de l'execution du logiciel, il y aura un avertissement de windows, veuillez l'ignorer
